@@ -7,15 +7,16 @@ const Login = () => {
   <div className="container relative m-auto px-6 text-gray-500 md:px-12 xl:px-40">
     <div className="m-auto space-y-8 md:w-8/12 lg:w-6/12 xl:w-6/12">
       <img
-        src="images/tailus.svg"
+        src="https://i.pinimg.com/originals/0c/9a/a1/0c9aa1bae8c00cc3fb5c2e9f14c5d773.jpg"
         loading="lazy"
-        className="ml-4 w-36"
-        alt="tailus logo"
+        className="ml-2 w-36"
+        alt="company logo"
+       
       />
       <div className="rounded-3xl border border-gray-100 bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 backdrop-blur-2xl">
         <div className="p-8 py-12 sm:p-16">
           <h2 className="mb-8 text-2xl font-bold text-gray-800 dark:text-white">
-            Sign in to your account
+            Login in to your account
           </h2>
           <form action="" className="space-y-8">
             <div className="space-y-2">
@@ -60,7 +61,7 @@ const Login = () => {
               className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
             >
               <span className="relative text-base font-semibold text-white dark:text-dark">
-                Connect
+                Login
               </span>
             </button>
             <p className="border-t border-gray-100 dark:border-gray-700 pt-6 text-sm text-gray-500 dark:text-gray-400">
