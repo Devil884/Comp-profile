@@ -1,93 +1,69 @@
-import React from 'react';
+ const Login = () => {
 
-const Login = () => {
   return (
-    <div>
-      <div className="relative py-16">
-  <div className="container relative m-auto px-6 text-gray-500 md:px-12 xl:px-40">
-    <div className="m-auto space-y-8 md:w-8/12 lg:w-6/12 xl:w-6/12">
-      <img
-        src="https://i.pinimg.com/originals/0c/9a/a1/0c9aa1bae8c00cc3fb5c2e9f14c5d773.jpg"
-        loading="lazy"
-        className="ml-2 w-36"
-        alt="company logo"
-       
-      />
-      <div className="rounded-3xl border border-gray-100 bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 backdrop-blur-2xl">
-        <div className="p-8 py-12 sm:p-16">
-          <h2 className="mb-8 text-2xl font-bold text-gray-800 dark:text-white">
-            Login in to your account
-          </h2>
-          <form action="" className="space-y-8">
-            <div className="space-y-2">
-              <label
-                htmlFor="email"
-                className="text-gray-600 dark:text-gray-300"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                autoComplete="username"
-                className="focus:outline-none block w-full rounded-md border border-gray-200 dark:border-gray-600 bg-transparent px-4 py-3 text-gray-600 transition duration-300 invalid:ring-2 invalid:ring-red-400 focus:ring-2 focus:ring-cyan-300"
-              />
-            </div>
+    <div className="relative flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-48 md:px-8 sm:max-w-xl md:max-w-full">
+      <div className="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
+        <img
+          src="https://kitwind.io/assets/kometa/laptop.png"
+          className="object-cover object-right w-full h-auto lg:w-auto lg:h-full"
+          alt=""
+        />
+      </div>
+      <div className="relative flex justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl">
+        <div className="mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
+          <div className="max-w-xl mb-6">
             <div>
-              <div className="flex items-center justify-between">
-                <label
-                  htmlFor="pwd"
-                  className="text-gray-600 dark:text-gray-300"
-                >
-                  Password
-                </label>
-                <button className="-mr-2 p-2" type="reset">
-                  <span className="text-sm text-primary">
-                    Forgot your password ?
-                  </span>
-                </button>
-              </div>
+              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
+                Brand new
+              </p>
+            </div>
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white-900 sm:text-4xl sm:leading-none">
+              We will bring your 
+              <br className="hidden md:block" />
+              business{' '}
+              <span className="inline-block text-deep-purple-accent-400">
+                online
+              </span>
+            </h2>
+            <p className="text-base text-gray-700 md:text-lg">
+              you can write content here
+            </p>
+          </div>
+          <form>
+            <div className="flex flex-col md:flex-row">
               <input
-                type="password"
-                name="pwd"
-                id="pwd"
-                autoComplete="current-password"
-                className="focus:outline-none block w-full rounded-md border border-gray-200 dark:border-gray-600 bg-transparent px-4 py-3 text-gray-600 transition duration-300 invalid:ring-2 invalid:ring-red-400 focus:ring-2 focus:ring-cyan-300"
+                placeholder="USER ID"
+                required=""
+                type="text"
+                className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+              />
+              <input
+                placeholder="Password"
+                required=""
+                type="Password"
+                className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
               />
             </div>
-            <button
-              type="submit"
-              className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95"
-            >
-              <span className="relative text-base font-semibold text-white dark:text-dark">
-                Login
-              </span>
-            </button>
-            <p className="border-t border-gray-100 dark:border-gray-700 pt-6 text-sm text-gray-500 dark:text-gray-400">
-              Don't have an account ?
-              <a href="#" className="text-primary">
-                Sign up
+            <div className="flex items-center mt-4">
+              <button
+                type="submit"
+                className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+              >
+                LOGIN
+              </button>
+              <a
+                href="/"
+                aria-label=""
+                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              >
+                SIGNUP
               </a>
-            </p>
+            </div>
           </form>
         </div>
       </div>
-      <div className="space-x-4 text-center text-gray-500">
-        <span>© tailus</span>
-        <a href="#" className="text-sm hover:text-primary">
-          Contact
-        </a>
-        <a href="#" className="text-sm hover:text-primary">
-          Privacy &amp; Terms
-        </a>
-      </div>
     </div>
-  </div>
-</div>
-
-    </div>
-  )
-}
+  );
+};
 
 export default Login;
