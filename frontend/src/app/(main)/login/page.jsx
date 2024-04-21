@@ -1,4 +1,4 @@
- const Login = () => {
+ const login = () => {
 
   return (
     <div className="relative flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-48 md:px-8 sm:max-w-xl md:max-w-full">
@@ -17,8 +17,8 @@
                 Brand new
               </p>
             </div>
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white-900 sm:text-4xl sm:leading-none">
-              We will bring your 
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              We will bring your
               <br className="hidden md:block" />
               business{' '}
               <span className="inline-block text-deep-purple-accent-400">
@@ -26,21 +26,23 @@
               </span>
             </h2>
             <p className="text-base text-gray-700 md:text-lg">
-              you can write content here
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae. explicabo.
             </p>
           </div>
           <form>
             <div className="flex flex-col md:flex-row">
               <input
-                placeholder="USER ID"
+                placeholder="Name"
                 required=""
                 type="text"
                 className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
               />
               <input
-                placeholder="Password"
+                placeholder="Email"
                 required=""
-                type="Password"
+                type="text"
                 className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
               />
             </div>
@@ -49,14 +51,14 @@
                 type="submit"
                 className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
               >
-                LOGIN
+                Subscribe
               </button>
               <a
                 href="/"
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                SIGNUP
+                Learn more
               </a>
             </div>
           </form>
@@ -66,4 +68,4 @@
   );
 };
 
-export default Login;
+export default login;
