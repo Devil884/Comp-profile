@@ -1,161 +1,124 @@
-'use client';
-import { useFormik } from 'formik';
-import Link from 'next/link';
-import React from 'react';
-import * as Yup from 'yup';
-
-const SignupSchema = Yup.object().shape({
-  name: Yup.string().min(4, 'Name pura likho').required('Naam nhi hai kya?'),
-  email: Yup.string().email('Invalid email').required('Required'),
-  password: Yup.string().required('Password is required')
-    .min(6, 'Too small').matches(/[A/Z]/,'must include uppercase letter')
-    .matches(/[a/z]/,'must include lo letter')
-    .matches(/[0-9]/,'must include number letter')
-    .matches(/\W/,'must include specil letter'),
-    confirmPassword: Yup.string().oneOf([Yup.ref('password'),null], 'passwords must match')
-    .required('password is required')
-});
-
 const Signup = () => {
 
-  const signupForm = useFormik({
-    initialValues: {
-      name: '',
-      email: '',
-      password: '',
-      confirmPassword: ''
-    },
-    onSubmit: (values) => {
-      console.log(values);
-      // send values to backend
-    },
-    validationSchema: SignupSchema
-  })
+
 
   return (
-    <section className="vh-100 bg-primary-subtle">
-      <div className="container py-5 h-100">
-        <div className="row d-flex justify-content-center align-items-center h-100">
-          <div className="col">
-            <div className="card shadow my-4">
-              <div className="row g-0">
-                <div className="col-xl-6 d-none d-xl-block">
-                  <div style={{
-                    backgroundImage: `url('https://assets.materialup.com/uploads/7563d4bc-0ed9-4202-a86c-ac8dc46e73ef/preview.jpg')`,
-                    height: '100%',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'no-repeat'
-                  }}>
-
+    <div className="relative">
+      <img
+        src="https://en.idei.club/uploads/posts/2023-03/1679022602_en-idei-club-p-dark-office-dizain-krasivo-1.jpg"
+        className="absolute inset-0 object-cover w-full h-full"
+        alt=""
+      />
+      <div className="relative bg-opacity-80 bg-deep-purple-accent-700">
+        <svg
+          className="absolute inset-x-0 bottom-0 text-white"
+          viewBox="0 0 1160 163"
+        >
+          <path
+            fill="currentColor"
+            d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
+          />
+        </svg>
+        <div className="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="flex flex-col items-center justify-between xl:flex-row">
+            <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                Creat your Profile <br className="hidden md:block" />
+                Just in seconds
+              </h2>
+              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
+                Profile that,s wellcomes people 
+              </p>
+              <a
+                href="/"
+                aria-label=""
+                className="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+              >
+                Learn more
+                <svg
+                  className="inline-block w-3 ml-2"
+                  fill="currentColor"
+                  viewBox="0 0 12 12"
+                >
+                  <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+                </svg>
+              </a>
+            </div>
+            <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
+              <div className="bg rounded shadow-2xl p-7 sm:p-10 ">
+                <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl text-white">
+                  SIGNUP FOR YOUR PROFILE
+                </h3>
+                <form>
+                  <div className="mb-1 sm:mb-2">
+                    <label
+                      htmlFor="firstName"
+                      className="inline-block mb-1 font-medium text-white"
+                    
+                    >
+                      First name
+                    </label>
+                    <input
+                      placeholder="John"
+                      required
+                      type="text"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      id="firstName"
+                      name="firstName"
+                    />
                   </div>
-                  <img
-                    src="https://assets.materialup.com/uploads/7563d4bc-0ed9-4202-a86c-ac8dc46e73ef/preview.jpg"
-                    alt="Sample"
-                    className="img-fluid"
-                  />
-                </div>
-                <div className="col-xl-6">
-
-                  <div className="card-body p-md-5">
-                    <h3 className="mb-5 text-primary fw-bold">
-                      Registration Form
-                    </h3>
-                    <form onSubmit={signupForm.handleSubmit} >
-
-                      <div class="mb-3">
-                        <label for="" class="form-label">Email Address</label>
-                        <input
-                          type="text"
-                          id="email"
-                          onChange={signupForm.handleChange}
-                          value={signupForm.values.email}
-                          class="form-control"
-                          placeholder=""
-                        />
-                        {signupForm.touched.email && (
-                          <small class="text-danger">{signupForm.errors.email}</small>
-                        )}
-                      </div>
-                      <div class="mb-3">
-                        <label for="" class="form-label">Name</label>
-                        <input
-                          type="text"
-                          id="name"
-                          onChange={signupForm.handleChange}
-                          value={signupForm.values.name}
-                          class="form-control"
-                          placeholder=""
-                        />
-                        {signupForm.touched.name && (
-                          <small class="text-danger">{signupForm.errors.name}</small>
-                        )}
-                      </div>
-                      <div class="mb-3">
-                        <label for="" class="form-label">Password</label>
-                        <input
-                          type="password"
-                          id="password"
-                          onChange={signupForm.handleChange}
-                          value={signupForm.values.password}
-                          class="form-control"
-                          placeholder=""
-                        />
-                        {signupForm.touched.password && (
-                          <small class="text-danger">{signupForm.errors.password}</small>
-                        )}
-                      </div>
-                      <div class="mb-3">
-                        <label for="" class="form-label">Confirm Password</label>
-                        <input
-                          type="password"
-                          id="confirmPassword"
-                          onChange={signupForm.handleChange}
-                          value={signupForm.values.confirmPassword}
-                          class="form-control"
-                          placeholder=""
-                        />
-                        {signupForm.touched.confirmPassword && (
-                          <small class="text-danger">{signupForm.errors.confirmPassword}</small>
-                        )}
-                      </div>
-                      <div className="form-check mb-4">
-                        <input
-                          className="form-check-input me-2"
-                          type="checkbox"
-                          defaultValue=""
-                          id="form2Example33"
-                          defaultChecked=""
-                        />
-                        <label
-                          className="form-check-label"
-                          htmlFor="form2Example33"
-                        >
-                          I Agree to Terms & Conditions
-                        </label>
-                      </div>
-                      <div className="d-flex justify-content-end pt-3">
-                        <button type="button" className="btn btn-light">
-                          Reset all
-                        </button>
-                        <button type="submit" className="btn btn-primary ms-2">
-                          Submit form
-                        </button>
-                      </div>
-                    </form>
-
-                    <p>Already Registered? <Link href='/login'>Login Here</Link></p>
-
+                  <div className="mb-1 sm:mb-2">
+                    <label
+                      htmlFor="lastName"
+                      className="inline-block mb-1 font-medium text-white"
+                    >
+                      Last name
+                    </label>
+                    <input
+                      placeholder="Doe"
+                      required
+                      type="text"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      id="lastName"
+                      name="lastName"
+                    />
                   </div>
-                </div>
+                  <div className="mb-1 sm:mb-2">
+                    <label
+                      htmlFor="email"
+                      className="inline-block mb-1 font-medium text-white" 
+                    >
+                      E-mail
+                    </label>
+                    <input
+                      placeholder="john.doe@example.org"
+                      required
+                      type="text"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      id="email"
+                      name="email"
+                    />
+                  </div>
+                  <div className="mt-4 mb-2 sm:mb-4">
+                    <button
+                      type="submit"
+                      className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none text-white"
+                    >
+                      Subscribe
+                    </button>
+                  </div>
+                  <p className="text-xs text-gray-600 sm:text-sm text-red bg-white">
+                     Unsubscribe at any time.
+                  </p>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  );
+};
 
-  )
-}
 
 export default Signup;
