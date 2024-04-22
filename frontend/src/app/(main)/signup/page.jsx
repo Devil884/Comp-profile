@@ -102,14 +102,12 @@ const Signup = () => {
                   <div className="mt-4 mb-2 sm:mb-4">
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none text-white"
+                      className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none text-black"
                     >
-                      Subscribe
+                     <b> SIGNUP</b>
                     </button>
                   </div>
-                  <p className="text-xs text-gray-600 sm:text-sm text-red bg-white">
-                     Unsubscribe at any time.
-                  </p>
+                 
                 </form>
               </div>
             </div>
