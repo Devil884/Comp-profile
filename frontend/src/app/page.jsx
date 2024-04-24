@@ -1,6 +1,99 @@
+import Link from "next/link";
+
 export const Content = () => {
   return (
-    
+    <div className="nav">
+      <nav className="bg-black dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+  <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a
+      href="https://flowbite.com/"
+      className="flex items-center space-x-3 rtl:space-x-reverse"
+    >
+      <img
+        src="https://flowbite.com/docs/images/logo.svg"
+        className="h-8"
+        alt="Flowbite Logo"
+      />
+      <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+        Company profile
+      </span>
+    </a>
+    <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+     <Link href="/login" > <button
+        type="button"
+        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Login
+      </button>
+      </Link>
+      <button
+        data-collapse-toggle="navbar-sticky"
+        type="button"
+        className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-sticky"
+        aria-expanded="false"
+      >
+        <span className="sr-only">Open main menu</span>
+        <svg
+          className="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+      id="navbar-sticky"
+    >
+      <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a
+            href="#"
+            className="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+            aria-current="page"
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          >
+            Services
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
@@ -34,7 +127,7 @@ export const Content = () => {
             </svg>
             <span className="relative">The</span>
           </span>{' '}
-          quick, brown fox jumps over a lazy dog
+          Welcome to profile Genrator
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -49,14 +142,14 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://img.freepik.com/free-vector/people-walking-sitting-hospital-building-city-clinic-glass-exterior-flat-vector-illustration-medical-help-emergency-architecture-healthcare-concept_74855-10130.jpg"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">
-                  The doctor said
+                  hospital
                 </h6>
                 <p className="text-sm text-gray-900">
                   Sportacus andrew weatherall goose Refined gentlemen super
@@ -73,14 +166,14 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?fit=max&fm=jpg&ixid=eyJhcHBfaWQiOjM1NjcwfQ&ixlib=rb-1.2.1&q=75&w=720&utm_medium=referral&utm_source=vocal.media"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">
-                  Skate ipsum dolor
+                  Schools & College
                 </h6>
                 <p className="text-sm text-gray-900">
                   Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -97,13 +190,13 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://www.organimi.com/wp-content/uploads/2021/09/AdobeStock_446256503-1080x675.jpeg"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">They urge you</h6>
+                <h6 className="mb-2 font-semibold leading-5">office</h6>
                 <p className="text-sm text-gray-900">
                   A flower in my garden, a mystery in my panties. Heart attack
                   never stopped old Big Bear.
@@ -119,14 +212,14 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3184296/pexels-photo-3184296.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://theabingtonian.com/wp-content/uploads/2022/10/sport.jpg"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">
-                  Baseball ipsum dolor
+                  sports
                 </h6>
                 <p className="text-sm text-gray-900">
                   Bro ipsum dolor sit amet gaper backside single track, manny
@@ -143,14 +236,14 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+              src="https://play-lh.googleusercontent.com/B-jPyxK2n7T3zESEqK95G4J4Z9Yjt3HxIeFwLK01ZP2QKHbYmx7QDuuUojPJ7Nyj0A"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">
-                  The doctor said
+                  Vendor's shop
                 </h6>
                 <p className="text-sm text-gray-900">
                   Sportacus andrew weatherall goose Refined gentlemen super
@@ -167,14 +260,14 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://t.pimg.jp/097/227/466/1/97227466.jpg"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">
-                  Skate ipsum dolor
+                  Hotle & restorent
                 </h6>
                 <p className="text-sm text-gray-900">
                   Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -191,13 +284,13 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://png.pngtree.com/template/20190822/ourmid/pngtree-creative-brand-letter-m-men-fashion-logo-design-image_295584.jpg"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
-                <h6 className="mb-2 font-semibold leading-5">They urge you</h6>
+                <h6 className="mb-2 font-semibold leading-5">Clothing</h6>
                 <p className="text-sm text-gray-900">
                   A flower in my garden, a mystery in my panties. Heart attack
                   never stopped old Big Bear.
@@ -213,14 +306,14 @@ export const Content = () => {
         >
           <div className="flex flex-col h-full">
             <img
-              src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+              src="https://s.tmimgcdn.com/scr/1200x750/304900/coffee-cup-logo-coffee-shop-vector-icon-design-v9_304962-original.jpg"
               className="object-cover w-full h-48"
               alt=""
             />
             <div className="flex-grow border border-t-0 rounded-b">
               <div className="p-5">
                 <h6 className="mb-2 font-semibold leading-5">
-                  Baseball ipsum dolor
+                  cafe's
                 </h6>
                 <p className="text-sm text-gray-900">
                   Bro ipsum dolor sit amet gaper backside single track, manny
@@ -885,6 +978,7 @@ export const Content = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
     </div>
     </div>

@@ -1,3 +1,4 @@
+ import Link from "next/link";
  const login = () => {
 
   return (
@@ -56,7 +57,7 @@
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                <a href="/signup">SignUp</a>
+                <Link href="/signup">SignUp</Link>
               </a>
             </div>
           </form>

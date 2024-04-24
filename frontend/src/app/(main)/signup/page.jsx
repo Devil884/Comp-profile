@@ -1,7 +1,4 @@
 const Signup = () => {
-
-
-
   return (
     <div className="relative">
       <img
