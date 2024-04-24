@@ -56,7 +56,7 @@
                 aria-label=""
                 className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                SignUp
+                <a href="/signup">SignUp</a>
               </a>
             </div>
           </form>
