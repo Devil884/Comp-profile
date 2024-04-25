@@ -1,7 +1,22 @@
 const express = require('express');
-const router =express.Router();
+const router = express.Router();
+const Model = require('../models/userModel')
 
-router.get('/add',(req,res)=>{
-    res.send('Responce from user add');
+router.post('/add', (req, res) => {
+    console.log(req.body);
+    res.send('Response from user add');
 });
- module.exports =router;
+
+router.get('/delete', (req, res) => {
+    res.send('Responce from user delete');
+});
+
+router.get('/update', (req, res) => {
+    res.send('Responce from user update');
+});
+
+router.get('/getall', (req, res) => {
+    res.send('Responce from user getall');
+});
+
+module.exports = router;

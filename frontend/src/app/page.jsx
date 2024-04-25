@@ -663,7 +663,7 @@ export const Content = () => {
         </div>
         <div className="relative flex flex-col justify-between p-8 transition-shadow duration-300 bg-white border rounded shadow-sm sm:items-center hover:shadow border-deep-purple-accent-400">
           <div className="absolute inset-x-0 top-0 flex justify-center -mt-3">
-            <div className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase rounded bg-deep-orange-accent-400">
+            <div className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-white uppercase rounded bg-orange">
               Most Popular
             </div>
           </div>

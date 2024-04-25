@@ -1,4 +1,36 @@
+'use client';
+import { useFormik } from "formik";
+
 const Signup = () => {
+  const signupForm = useFormik({
+    initialValues: {
+      name: '',
+      email: '',
+      password: '',
+      confirmPassword: ''
+    },
+
+    onSubmit: (values) => {
+      console.log(values);
+
+      //1.send request to backend
+      //2. recivee request at backend
+      //3. process the request
+      //4.send responce back to frontend
+
+      fetch('http://localhost:5000/user/add', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+
+    },
+    // validationSchema: SignupSchema
+  })
+
+
   return (
     <div className="relative">
       <img
@@ -24,7 +56,7 @@ const Signup = () => {
                 Just in seconds
               </h2>
               <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                Profile that,s wellcomes people 
+                Profile that,s wellcomes people
               </p>
               <a
                 href="/"
@@ -46,54 +78,65 @@ const Signup = () => {
                 <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl text-white">
                   SIGNUP FOR YOUR PROFILE
                 </h3>
-                <form>
+                <form onSubmit={signupForm.handleSubmit}>
                   <div className="mb-1 sm:mb-2">
                     <label
-                      htmlFor="firstName"
-                      className="inline-block mb-1 font-medium text-white"
-                    
-                    >
-                      First name
-                    </label>
-                    <input
-                      placeholder="John"
-                      required
-                      type="text"
-                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="firstName"
-                      name="firstName"
-                    />
-                  </div>
-                  <div className="mb-1 sm:mb-2">
-                    <label
-                      htmlFor="lastName"
+                      htmlFor="name"
                       className="inline-block mb-1 font-medium text-white"
                     >
-                      Last name
+                      Name
                     </label>
                     <input
-                      placeholder="Doe"
-                      required
                       type="text"
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                      id="lastName"
-                      name="lastName"
+                      id="name"
+                      onChange={signupForm.handleChange}
+                      value={signupForm.values.name}
                     />
                   </div>
                   <div className="mb-1 sm:mb-2">
                     <label
                       htmlFor="email"
-                      className="inline-block mb-1 font-medium text-white" 
+                      className="inline-block mb-1 font-medium text-white"
                     >
-                      E-mail
+                      Email
                     </label>
                     <input
-                      placeholder="john.doe@example.org"
-                      required
-                      type="text"
+                      type="email"
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                       id="email"
-                      name="email"
+                      onChange={signupForm.handleChange}
+                      value={signupForm.values.email}
+                    />
+                  </div>
+                  <div className="mb-1 sm:mb-2">
+                    <label
+                      htmlFor="password"
+                      className="inline-block mb-1 font-medium text-white"
+                    >
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      id="password"
+                      onChange={signupForm.handleChange}
+                      value={signupForm.values.password}
+                    />
+                  </div>
+                  <div className="mb-1 sm:mb-2">
+                    <label
+                      htmlFor="password"
+                      className="inline-block mb-1 font-medium text-white"
+                    >
+                      Confirm Password
+                    </label>
+                    <input
+                      type="password"
+                      className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                      id="confirmPassword"
+                      onChange={signupForm.handleChange}
+                      value={signupForm.values.confirmPassword}
                     />
                   </div>
                   <div className="mt-4 mb-2 sm:mb-4">
@@ -101,10 +144,10 @@ const Signup = () => {
                       type="submit"
                       className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none text-black"
                     >
-                     <b> SIGNUP</b>
+                      <b>SIGNUP</b>
                     </button>
                   </div>
-                 
+
                 </form>
               </div>
             </div>
