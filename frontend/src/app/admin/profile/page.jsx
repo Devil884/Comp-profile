@@ -2,13 +2,13 @@ import React from 'react'
 
 const AdminProfile = () => {
   return (
-    <div><div className="bg-white py-6 sm:py-8 lg:py-12">
+    <div><div className="bg-darkpurple py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       {/* quote - start */}
       <div className="flex flex-col items-center gap-4 md:gap-6">
         <a
           href="#"
-          className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
+          className="text-orange transition duration-100 hover:text-gray-500 active:text-gray-600"
         >
           <svg
             className="h-6 w-auto sm:h-8"
@@ -23,7 +23,7 @@ const AdminProfile = () => {
             <rect x={9} y={17} width={15} height={5} />
           </svg>
         </a>
-        <div className="max-w-md text-center text-gray-600 lg:text-lg">
+        <div className="max-w-md text-center text-green lg:text-lg">
           “This is a section of some simple filler text, also known as placeholder
           text.”
         </div>
@@ -37,16 +37,282 @@ const AdminProfile = () => {
             />
           </div>
           <div>
-            <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
+            <div className="text-center text-sm font-bold text-black sm:text-left md:text-base">
               John McCulling
             </div>
-            <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
+            <p className="text-center text-sm text-black sm:text-left md:text-sm">
               CEO / Datadrift
             </p>
           </div>
         </div>
       </div>
       {/* quote - end */}
+    </div>
+    <div>
+    <form className="max-w-md mx-auto">
+  <div className="relative z-0 w-full mb-5 group">
+    <input
+      type="email"
+      name="floating_email"
+      id="floating_email"
+      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+      placeholder=" "
+      required=""
+    />
+    <label
+      htmlFor="floating_email"
+      className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+    >
+      Email address
+    </label>
+  </div>
+  <div className="relative z-0 w-full mb-5 group">
+    <input
+      type="password"
+      name="floating_password"
+      id="floating_password"
+      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+      placeholder=" "
+      required=""
+    />
+    <label
+      htmlFor="floating_password"
+      className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+    >
+      Password
+    </label>
+  </div>
+  <div className="relative z-0 w-full mb-5 group">
+    <input
+      type="password"
+      name="repeat_password"
+      id="floating_repeat_password"
+      className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+      placeholder=" "
+      required=""
+    />
+    <label
+      htmlFor="floating_repeat_password"
+      className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+    >
+      Confirm password
+    </label>
+  </div>
+  <div className="grid md:grid-cols-2 md:gap-6">
+    <div className="relative z-0 w-full mb-5 group">
+      <input
+        type="text"
+        name="floating_first_name"
+        id="floating_first_name"
+        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        placeholder=" "
+        required=""
+      />
+      <label
+        htmlFor="floating_first_name"
+        className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+      >
+        First name
+      </label>
+    </div>
+    <div className="relative z-0 w-full mb-5 group">
+      <input
+        type="text"
+        name="floating_last_name"
+        id="floating_last_name"
+        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        placeholder=" "
+        required=""
+      />
+      <label
+        htmlFor="floating_last_name"
+        className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+      >
+        Last name
+      </label>
+    </div>
+  </div>
+  <div className="grid md:grid-cols-2 md:gap-6">
+    <div className="relative z-0 w-full mb-5 group">
+      <input
+        type="tel"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        name="floating_phone"
+        id="floating_phone"
+        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        placeholder=" "
+        required=""
+      />
+      <label
+        htmlFor="floating_phone"
+        className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+      >
+        Phone number (123-456-7890)
+      </label>
+    </div>
+    <div className="relative z-0 w-full mb-5 group">
+      <input
+        type="text"
+        name="floating_company"
+        id="floating_company"
+        className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+        placeholder=" "
+        required=""
+      />
+      <label
+        htmlFor="floating_company"
+        className="peer-focus:font-medium absolute text-sm text-black dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+      >
+        Company (Ex. Google)
+      </label>
+    </div>
+  </div>
+  <button
+    type="submit"
+    className="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-orange dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+  >
+    Submit
+  </button>
+</form>
+ </div>
+ <br />
+    <div className="p-6">
+    <ol className="items-center sm:flex">
+  <li className="relative mb-6 sm:mb-0">
+    <div className="flex items-center">
+      <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+        <svg
+          className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+        </svg>
+      </div>
+      <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+    </div>
+    <div className="mt-3 sm:pe-8">
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+        Flowbite Library v1.0.0
+      </h3>
+      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+        Released on December 2, 2021
+      </time>
+      <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+        Get started with dozens of web components and interactive elements.
+      </p>
+    </div>
+  </li>
+  <li className="relative mb-6 sm:mb-0">
+    <div className="flex items-center">
+      <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+        <svg
+          className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+        </svg>
+      </div>
+      <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+    </div>
+    <div className="mt-3 sm:pe-8">
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+        Flowbite Library v1.2.0
+      </h3>
+      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+        Released on December 23, 2021
+      </time>
+      <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+        Get started with dozens of web components and interactive elements.
+      </p>
+    </div>
+  </li>
+  <li className="relative mb-6 sm:mb-0">
+    <div className="flex items-center">
+      <div className="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white dark:bg-blue-900 sm:ring-8 dark:ring-gray-900 shrink-0">
+        <svg
+          className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+        </svg>
+      </div>
+      <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700" />
+    </div>
+    <div className="mt-3 sm:pe-8">
+      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+        Flowbite Library v1.3.0
+      </h3>
+      <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+        Released on January 5, 2022
+      </time>
+      <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+        Get started with dozens of web components and interactive elements.
+      </p>
+    </div>
+  </li>
+</ol>
+<hr />
+    </div>
+    <div>
+    <footer className="bg-blue rounded-lg shadow dark:bg-gray-900 m-4">
+  <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+    <div className="sm:flex sm:items-center sm:justify-between">
+      <a
+        href="https://flowbite.com/"
+        className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+      >
+        <img
+          src="https://flowbite.com/docs/images/logo.svg"
+          className="h-8"
+          alt="Flowbite Logo"
+        />
+        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          Flowbite
+        </span>
+      </a>
+      <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+        <li>
+          <a href="#" className="hover:underline me-4 md:me-6">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:underline me-4 md:me-6">
+            Privacy Policy
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:underline me-4 md:me-6">
+            Licensing
+          </a>
+        </li>
+        <li>
+          <a href="#" className="hover:underline">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+      © 2023{" "}
+      <a href="https://flowbite.com/" className="hover:underline">
+        Flowbite™
+      </a>
+      . All Rights Reserved.
+    </span>
+  </div>
+</footer>
+
     </div>
   </div>
   </div>
