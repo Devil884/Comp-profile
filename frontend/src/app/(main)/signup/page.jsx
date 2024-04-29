@@ -1,5 +1,6 @@
 'use client';
 import { useFormik } from "formik";
+import toast from "react-hot-toast";
 
 const Signup = () => {
   const signupForm = useFormik({
@@ -25,6 +26,17 @@ const Signup = () => {
           'Content-Type': 'application/json'
         }
       })
+        .then((response) => {
+          console.log(response.status);
+          if (response.status === 200) {
+            toast.success('Registered Successfully');
+          } else {
+            toast.error('Something went wrong');
+          }
+        }).catch((err) => {
+          console.log(err);
+          toast.error('Something went wrong');
+        });
 
     },
     // validationSchema: SignupSchema

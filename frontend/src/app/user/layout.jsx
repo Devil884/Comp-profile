@@ -1,8 +1,16 @@
 import React from 'react'
+import Sidebar from './Sidebar'
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <div>{children}</div>
+    <div className='grid grid-cols-12'>
+      <div className='col-span-3'>
+        <Sidebar />
+      </div>
+      <div className='col-span-9'>
+        {children}
+      </div>
+    </div>
   )
 }
 

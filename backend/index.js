@@ -1,6 +1,7 @@
 // import express
 const express = require('express');
 const userRouter = require('./routers/userRouter');
+const profileRouter = require('./routers/profileRouter');
 const cors = require('cors');
 
 // initialize express
@@ -14,10 +15,11 @@ app.use(cors({
 
 app.use(express.json());
 
-app.use( '/user', userRouter );
+app.use('/user', userRouter);
+app.use('/profile', profileRouter);
 
 // endpoint
-app.get('/' , (req, res) => {
+app.get('/', (req, res) => {
     res.send('Response from express');
 });
 

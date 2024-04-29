@@ -5,7 +5,7 @@ export const Content = () => {
     <div>
       <>
   {/* hero - start */}
-  <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
+  <div className="bg-slate-700 pb-6 sm:pb-8 lg:pb-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       <header className="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
         {/* logo - start */}
@@ -95,7 +95,7 @@ export const Content = () => {
           </p>
           <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
             <a
-              href="#"
+              href="./home"
               className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
             >
               Start now
@@ -124,10 +124,10 @@ export const Content = () => {
   </div>
   {/* hero - end */}
   {/* features - start */}
-  <div className="bg-white py-6 sm:py-8 lg:py-12">
+  <div className="bg-slate-800 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       {/* text - start */}
-      <div className="mb-10 md:mb-16">
+      <div className="mb-10 md:mb-16 ">
         <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
           Our competitive advantage
         </h2>
@@ -342,9 +342,9 @@ export const Content = () => {
   </div>
   {/* features - end */}
   {/* logo cloud - start */}
-  <div className="bg-white py-6 sm:py-8 lg:py-12">
+  <div className="bg-slate-700 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-      <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl">
+      <h2 className="mb-4 text-center text-2xl font-bold text-black md:mb-8 lg:text-3xl">
         Trusted by the best
       </h2>
       <div className="grid grid-cols-2 gap-6 rounded-lg bg-gray-100 p-6 sm:h-40 sm:content-evenly md:grid-cols-4">
@@ -414,7 +414,7 @@ export const Content = () => {
   </div>
   {/* logo cloud - end */}
   {/* stats - start */}
-  <div className="bg-white py-6 sm:py-8 lg:py-12">
+  <div className="bg-slate-600 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
       {/* text - start */}
       <div className="mb-10 md:mb-16">
@@ -453,7 +453,7 @@ export const Content = () => {
         </div>
         {/* stat - end */}
         {/* stat - start */}
-        <div className="flex flex-col items-center md:p-4">
+        <div className="flex flex-col items-center md:p-4 ">
           <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
             A couple
           </div>
@@ -467,7 +467,7 @@ export const Content = () => {
   </div>
   {/* stats - end */}
   {/* team - start */}
-  <div className="bg-white py-6 sm:py-8 lg:py-12">
+  <div className="bg-slate-700 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
       {/* text - start */}
       <div className="mb-10 md:mb-16">
@@ -951,9 +951,9 @@ export const Content = () => {
   </div>
   {/* team - end */}
   {/* testemonials - start */}
-  <div className="bg-white py-6 sm:py-8 lg:py-12">
+  <div className="bg-slate-800 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-      <h2 className="mb-8 text-center text-2xl font-bold text-gray-800 md:mb-12 lg:text-3xl">
+      <h2 className="mb-8 text-center text-2xl font-bold text-black md:mb-12 lg:text-3xl">
         What others say about us
       </h2>
       <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
