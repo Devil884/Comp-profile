@@ -3,11 +3,11 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-zinc-400 dark:bg-gray-900">
   <div className="container px-6 py-10 mx-auto">
     <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-      explore our <br /> awesome{" "}
-      <span className="text-blue-500">Components</span>
+      explore our <br /> Page{" "}
+      <span className="text-rose-700">Components</span>
     </h1>
     <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3">
       <div className="flex flex-col items-center p-6 space-y-3 text-center bg-gray-100 rounded-xl dark:bg-gray-800">
@@ -148,7 +148,7 @@ const About = () => {
     <div className="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
       {/* Gradients */}
       <div aria-hidden="true" className="flex -z-[1] absolute start-0">
-        <div className="bg-purple-200 opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20" />
+        <div className="bg-black opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20" />
       </div>
       {/* End Gradients */}
       {/* Grid */}
@@ -211,7 +211,7 @@ const About = () => {
 </>
 <>
   {/* Testimonials with Stats */}
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-zinc-300">
     {/* Grid */}
     <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between">
       <div className="lg:col-span-5 lg:col-start-1">
@@ -220,7 +220,7 @@ const About = () => {
           <h2 className="mb-2 text-3xl text-gray-800 font-bold lg:text-4xl dark:text-neutral-200">
             It's all about speed
           </h2>
-          <p className="text-gray-600 dark:text-neutral-400">
+          <p className="text-red-600 dark:text-neutral-400">
             We provide you with a test account that can be set up in seconds.
             Our main focus is getting responses to you as soon as we can.
           </p>
@@ -347,7 +347,7 @@ const About = () => {
   {/* End Testimonials with Stats */}
   <>
   {/* Testimonials */}
-  <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-zinc-300">
     {/* Blockquote */}
     <blockquote className="text-center lg:mx-auto lg:w-3/5">
       <svg
@@ -402,13 +402,13 @@ const About = () => {
 </>
 <>
   {/* Testimonials */}
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-black ">
     {/* Grid */}
     <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:gap-20 md:grid-cols-3 lg:grid-cols-5 lg:gap-8">
       {/* Icon Block */}
       <div className="text-center">
         <svg
-          className="w-auto h-8 mx-auto text-gray-800 dark:text-neutral-200"
+          className="w-auto h-8 mx-auto text-gray-200 dark:text-neutral-200"
           width={227}
           height={88}
           viewBox="0 0 227 88"
@@ -499,7 +499,7 @@ const About = () => {
       {/* Icon Block */}
       <div className="text-center">
         <svg
-          className="w-auto h-8 mx-auto text-gray-800 dark:text-neutral-200"
+          className="w-auto h-8 mx-auto text-gray-200 dark:text-neutral-200"
           width={100}
           height={33}
           viewBox="0 0 100 33"
@@ -594,7 +594,7 @@ const About = () => {
       {/* Icon Block */}
       <div className="text-center">
         <svg
-          className="w-auto h-8 mx-auto text-gray-800 dark:text-neutral-200"
+          className="w-auto h-8 mx-auto text-gray-200 dark:text-neutral-200"
           width={106}
           height={36}
           viewBox="0 0 106 36"
@@ -685,7 +685,7 @@ const About = () => {
       {/* Icon Block */}
       <div className="text-center">
         <svg
-          className="w-auto h-8 mx-auto text-gray-800 dark:text-neutral-200"
+          className="w-auto h-8 mx-auto text-gray-200 dark:text-neutral-200"
           width={140}
           height={47}
           viewBox="0 0 140 47"
@@ -864,7 +864,7 @@ const About = () => {
       {/* Icon Block */}
       <div className="text-center">
         <svg
-          className="w-auto h-8 mx-auto text-gray-800 dark:text-neutral-200"
+          className="w-auto h-8 mx-auto text-gray-200 dark:text-neutral-200"
           width={140}
           height={47}
           viewBox="0 0 140 47"
