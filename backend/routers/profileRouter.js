@@ -23,7 +23,13 @@ router.get('/update', (req, res) => {
 
 // getall
 router.get('/getall', (req, res) => {
-    res.send('Response from user getall');
+    Model.find()
+        .then((result) => {
+            res.status(200).json(result);
+        }).catch((err) => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
 
 module.exports = router;
