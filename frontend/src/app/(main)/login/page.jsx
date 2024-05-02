@@ -1,10 +1,13 @@
 'use client';
 import { useFormik } from 'formik'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation';
 import React from 'react'
 import toast from 'react-hot-toast';
 
 const Login = () => {
+
+  const router = useRouter();
 
   const loginForm = useFormik({
     initialValues: {
@@ -27,6 +30,7 @@ const Login = () => {
             .then((data) => {
               console.log(data);
               sessionStorage.setItem('user', JSON.stringify(data));
+              router.push('/user/edit-page');
             })
           } else {
             toast.error('Invalid Credentials');
