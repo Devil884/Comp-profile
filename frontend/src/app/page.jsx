@@ -5,7 +5,7 @@ export const Content = () => {
     <div>
       <>
   {/* hero - start */}
-  <div className="bg-slate-700 pb-6 sm:pb-8 lg:pb-12">
+  <div className="bg-red-200 pb-6 sm:pb-8 lg:pb-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       <header className="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
         {/* logo - start */}
@@ -40,7 +40,7 @@ export const Content = () => {
           </a>
           <a
             href="#"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
+            className="text-lg font-semibold  text-black transition duration-100 hover:text-indigo-500 active:text-indigo-700"
           >
             Pricing
           </a>
@@ -83,26 +83,24 @@ export const Content = () => {
         {/* content - start */}
         <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
           <p className="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">
-            Very proud to introduce
+            THE ONE AND ONLY
           </p>
           <h1 className="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">
-            Revolutionary way to build the web
+            Revolutionary way to build Your Profile
           </h1>
-          <p className="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random.
+          <p className="mb-8 leading-relaxed text-black md:mb-12 lg:w-4/5 xl:text-lg">
+            The place Only place to setup your needs
           </p>
           <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-            <a
-              href="./home"
+            <Link
+              href="./view-profile"
               className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base"
             >
               Start now
-            </a>
+            </Link>
             <a
               href="#"
-              className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
+              className="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-black outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base"
             >
               Take tour
             </a>
@@ -124,14 +122,14 @@ export const Content = () => {
   </div>
   {/* hero - end */}
   {/* features - start */}
-  <div className="bg-slate-800 py-6 sm:py-8 lg:py-12">
+  <div className="bg-red-200 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       {/* text - start */}
       <div className="mb-10 md:mb-16 ">
         <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
           Our competitive advantage
         </h2>
-        <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+        <p className="mx-auto max-w-screen-md text-center text-black md:text-lg">
           This is a section of some simple filler text, also known as
           placeholder text. It shares some characteristics of a real written
           text but is random or otherwise generated.
@@ -158,8 +156,8 @@ export const Content = () => {
             </svg>
           </div>
           <div>
-            <h3 className="mb-2 text-lg font-semibold md:text-xl">Growth</h3>
-            <p className="mb-2 text-gray-500">
+            <h3 className="mb-2 text-lg font-semibold md:text-xl  text-black">Growth</h3>
+            <p className="mb-2 text-black">
               Filler text is dummy text which has no meaning however looks very
               similar to real text.
             </p>
@@ -191,8 +189,8 @@ export const Content = () => {
             </svg>
           </div>
           <div>
-            <h3 className="mb-2 text-lg font-semibold md:text-xl">Security</h3>
-            <p className="mb-2 text-gray-500">
+            <h3 className="mb-2 text-lg font-semibold md:text-xl  text-black">Security</h3>
+            <p className="mb-2  text-black">
               Filler text is dummy text which has no meaning however looks very
               similar to real text.
             </p>
@@ -224,8 +222,8 @@ export const Content = () => {
             </svg>
           </div>
           <div>
-            <h3 className="mb-2 text-lg font-semibold md:text-xl">Cloud</h3>
-            <p className="mb-2 text-gray-500">
+            <h3 className="mb-2 text-lg font-semibold md:text-xl  text-black">Cloud</h3>
+            <p className="mb-2  text-black">
               Filler text is dummy text which has no meaning however looks very
               similar to real text.
             </p>
@@ -257,8 +255,8 @@ export const Content = () => {
             </svg>
           </div>
           <div>
-            <h3 className="mb-2 text-lg font-semibold md:text-xl">Speed</h3>
-            <p className="mb-2 text-gray-500">
+            <h3 className="mb-2 text-lg font-semibold md:text-xl  text-black">Speed</h3>
+            <p className="mb-2  text-black">
               Filler text is dummy text which has no meaning however looks very
               similar to real text.
             </p>
@@ -290,8 +288,8 @@ export const Content = () => {
             </svg>
           </div>
           <div>
-            <h3 className="mb-2 text-lg font-semibold md:text-xl">Support</h3>
-            <p className="mb-2 text-gray-500">
+            <h3 className="mb-2 text-lg font-semibold md:text-xl  text-black">Support</h3>
+            <p className="mb-2  text-black">
               Filler text is dummy text which has no meaning however looks very
               similar to real text.
             </p>
@@ -323,8 +321,8 @@ export const Content = () => {
             </svg>
           </div>
           <div>
-            <h3 className="mb-2 text-lg font-semibold md:text-xl">Dark Mode</h3>
-            <p className="mb-2 text-gray-500">
+            <h3 className="mb-2 text-lg font-semibold md:text-xl  text-black">Dark Mode</h3>
+            <p className="mb-2  text-black">
               Filler text is dummy text which has no meaning however looks very
               similar to real text.
             </p>
@@ -342,14 +340,14 @@ export const Content = () => {
   </div>
   {/* features - end */}
   {/* logo cloud - start */}
-  <div className="bg-slate-700 py-6 sm:py-8 lg:py-12">
+  <div className="bg-red-200 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
       <h2 className="mb-4 text-center text-2xl font-bold text-black md:mb-8 lg:text-3xl">
         Trusted by the best
       </h2>
       <div className="grid grid-cols-2 gap-6 rounded-lg bg-gray-100 p-6 sm:h-40 sm:content-evenly md:grid-cols-4">
         {/* logo - start */}
-        <div className="flex justify-center text-gray-400">
+        <div className="flex justify-center  text-black">
           <svg
             className="h-6 w-auto sm:h-8 lg:h-10"
             width={154}
@@ -364,7 +362,7 @@ export const Content = () => {
         </div>
         {/* logo - end */}
         {/* logo - start */}
-        <div className="flex justify-center text-gray-400">
+        <div className="flex justify-center  text-black">
           <svg
             className="h-6 w-auto sm:h-8 lg:h-10"
             width={186}
@@ -379,7 +377,7 @@ export const Content = () => {
         </div>
         {/* logo - end */}
         {/* logo - start */}
-        <div className="flex justify-center text-gray-400">
+        <div className="flex justify-center text-black">
           <svg
             className="h-6 w-auto sm:h-8 lg:h-10"
             width={173}
@@ -395,7 +393,7 @@ export const Content = () => {
         </div>
         {/* logo - end */}
         {/* logo - start */}
-        <div className="flex justify-center text-gray-400">
+        <div className="flex justify-center text-black">
           <svg
             className="h-6 w-auto sm:h-8 lg:h-10"
             width={146}
@@ -414,14 +412,14 @@ export const Content = () => {
   </div>
   {/* logo cloud - end */}
   {/* stats - start */}
-  <div className="bg-slate-600 py-6 sm:py-8 lg:py-12">
+  <div className="bg-red-300 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
       {/* text - start */}
       <div className="mb-10 md:mb-16">
         <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
           Our Team by the numbers
         </h2>
-        <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+        <p className="mx-auto max-w-screen-md text-center text-black md:text-lg">
           This is a section of some simple filler text, also known as
           placeholder text. It shares some characteristics of a real written
           text but is random or otherwise generated.
@@ -434,7 +432,7 @@ export const Content = () => {
           <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
             200
           </div>
-          <div className="text-sm font-semibold sm:text-base">People</div>
+          <div className="text-sm font-semibold sm:text-base  text-black">People</div>
         </div>
         {/* stat - end */}
         {/* stat - start */}
@@ -442,14 +440,14 @@ export const Content = () => {
           <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
             500+
           </div>
-          <div className="text-sm font-semibold sm:text-base">People</div>
+          <div className="text-sm font-semibold sm:text-base  text-black">People</div>
         </div>
         {/* stat - start */}
         <div className="flex flex-col items-center md:p-4">
           <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
             1000+
           </div>
-          <div className="text-sm font-semibold sm:text-base">Customers</div>
+          <div className="text-sm font-semibold sm:text-base  text-black">Customers</div>
         </div>
         {/* stat - end */}
         {/* stat - start */}
@@ -457,7 +455,7 @@ export const Content = () => {
           <div className="text-xl font-bold text-indigo-500 sm:text-2xl md:text-3xl">
             A couple
           </div>
-          <div className="text-sm font-semibold sm:text-base">
+          <div className="text-sm font-semibold sm:text-base  text-black">
             Coffee breaks
           </div>
         </div>
@@ -467,14 +465,14 @@ export const Content = () => {
   </div>
   {/* stats - end */}
   {/* team - start */}
-  <div className="bg-slate-700 py-6 sm:py-8 lg:py-12">
+  <div className="bg-red-200 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
       {/* text - start */}
       <div className="mb-10 md:mb-16">
         <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
           Meet our Team
         </h2>
-        <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+        <p className="mx-auto max-w-screen-md text-center text-black md:text-lg">
           This is a section of some simple filler text, also known as
           placeholder text. It shares some characteristics of a real written
           text but is random or otherwise generated.
@@ -951,7 +949,7 @@ export const Content = () => {
   </div>
   {/* team - end */}
   {/* testemonials - start */}
-  <div className="bg-slate-800 py-6 sm:py-8 lg:py-12">
+  <div className="bg-red-200 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
       <h2 className="mb-8 text-center text-2xl font-bold text-black md:mb-12 lg:text-3xl">
         What others say about us
@@ -1040,9 +1038,9 @@ export const Content = () => {
   </div>
   {/* testemonials - end */}
   {/* newsletter - start */}
-  <div className="bg-white py-6 sm:py-8 lg:py-12">
+  <div className="bg-red-200 py-6 sm:py-8 lg:py-12">
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-      <div className="flex flex-col items-center rounded-lg bg-gray-100 p-4 sm:p-8">
+      <div className="flex flex-col items-center rounded-lg bg-red-100 p-4 sm:p-8">
         <div className="mb-4 sm:mb-8">
           <h2 className="text-center text-xl font-bold text-indigo-500 sm:text-2xl lg:text-3xl">
             Get the latest updates
@@ -1082,7 +1080,7 @@ export const Content = () => {
   </div>
   {/* newsletter - end */}
   {/* footer - start */}
-  <div className="bg-gray-900">
+  <div className="bg-red-200">
     <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
       <div className="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
         <div className="col-span-full lg:col-span-2">
@@ -1090,14 +1088,14 @@ export const Content = () => {
           <div className="mb-4 lg:-mt-2">
             <a
               href="/"
-              className="inline-flex items-center gap-2 text-xl font-bold text-gray-100 md:text-2xl"
+              className="inline-flex items-center gap-2 text-xl font-bold text-black md:text-2xl"
               aria-label="logo"
             >
               <svg
                 width={95}
                 height={94}
                 viewBox="0 0 95 94"
-                className="h-auto w-5 text-indigo-500"
+                className="h-auto w-5 text-black "
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -1107,7 +1105,7 @@ export const Content = () => {
             </a>
           </div>
           {/* logo - end */}
-          <p className="mb-6 text-gray-400 sm:pr-8">
+          <p className="mb-6  text-black sm:pr-8">
             Filler text is dummy text which has no meaning however looks very
             similar to real text.
           </p>
@@ -1116,10 +1114,10 @@ export const Content = () => {
             <a
               href="#"
               target="_blank"
-              className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
+              className="text-gray-400 transition duration-100 hover:text-gray-00 active:text-gray-00"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5  text-black"
                 width={24}
                 height={24}
                 viewBox="0 0 24 24"
@@ -1135,7 +1133,7 @@ export const Content = () => {
               className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5  text-black"
                 width={24}
                 height={24}
                 viewBox="0 0 24 24"
@@ -1151,7 +1149,7 @@ export const Content = () => {
               className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5  text-black"
                 width={24}
                 height={24}
                 viewBox="0 0 24 24"
@@ -1167,7 +1165,7 @@ export const Content = () => {
               className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
             >
               <svg
-                className="h-5 w-5"
+                className="h-5 w-5  text-black"
                 width={24}
                 height={24}
                 viewBox="0 0 24 24"
@@ -1182,14 +1180,14 @@ export const Content = () => {
         </div>
         {/* nav - start */}
         <div>
-          <div className="mb-4 font-bold uppercase tracking-widest text-gray-100">
+          <div className="mb-4 font-bold uppercase tracking-widest  text-black">
             Products
           </div>
           <nav className="flex flex-col gap-4">
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" transition duration-100 hover:text-indigo-500 active:text-indigo-600  text-black"
               >
                 Overview
               </a>
@@ -1197,7 +1195,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Solutions
               </a>
@@ -1205,7 +1203,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Pricing
               </a>
@@ -1213,7 +1211,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Customers
               </a>
@@ -1223,14 +1221,14 @@ export const Content = () => {
         {/* nav - end */}
         {/* nav - start */}
         <div>
-          <div className="mb-4 font-bold uppercase tracking-widest text-gray-100">
+          <div className="mb-4 font-bold uppercase tracking-widest  text-black">
             Company
           </div>
           <nav className="flex flex-col gap-4">
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 About
               </a>
@@ -1238,7 +1236,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Investor Relations
               </a>
@@ -1246,7 +1244,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Jobs
               </a>
@@ -1254,7 +1252,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Press
               </a>
@@ -1262,7 +1260,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Blog
               </a>
@@ -1272,14 +1270,14 @@ export const Content = () => {
         {/* nav - end */}
         {/* nav - start */}
         <div>
-          <div className="mb-4 font-bold uppercase tracking-widest text-gray-100">
+          <div className="mb-4 font-bold uppercase tracking-widest  text-black">
             Support
           </div>
           <nav className="flex flex-col gap-4">
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Contact
               </a>
@@ -1287,7 +1285,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Documentation
               </a>
@@ -1295,7 +1293,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Chat
               </a>
@@ -1303,7 +1301,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 FAQ
               </a>
@@ -1313,14 +1311,14 @@ export const Content = () => {
         {/* nav - end */}
         {/* nav - start */}
         <div>
-          <div className="mb-4 font-bold uppercase tracking-widest text-gray-100">
+          <div className="mb-4 font-bold uppercase tracking-widest  text-black">
             Legal
           </div>
           <nav className="flex flex-col gap-4">
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Terms of Service
               </a>
@@ -1328,7 +1326,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Privacy Policy
               </a>
@@ -1336,7 +1334,7 @@ export const Content = () => {
             <div>
               <a
                 href="#"
-                className="text-gray-400 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+                className=" text-black transition duration-100 hover:text-indigo-500 active:text-indigo-600"
               >
                 Cookie settings
               </a>
@@ -1345,7 +1343,7 @@ export const Content = () => {
         </div>
         {/* nav - end */}
       </div>
-      <div className="border-t border-gray-800 py-8 text-center text-sm text-gray-400">
+      <div className="border-t border-gray-800 py-8 text-center text-sm  text-black">
         © 2021 - Present Flowrift. All rights reserved.
       </div>
     </footer>
