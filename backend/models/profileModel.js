@@ -4,7 +4,7 @@ const mySchema = new Schema({
     name : {type : String, default: 'Untitled Company Name'},
     logo: {type : String, default: 'logo-placeholder-image'},
     address: String,
-    industry: String,
+    Industry: String,
     email: String,
     city: String,
     state: String,
