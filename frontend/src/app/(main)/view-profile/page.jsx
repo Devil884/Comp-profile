@@ -2,8 +2,8 @@ import React from 'react'
 
 const Viewpage = () => {
   return (
-    <div>
-      <section className="bg-white dark:bg-gray-900">
+    <div className='m-7 bg-purple-200'>
+      <section className="bg-purple-300 dark:bg-gray-900 ">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white">
             explore our <br /> awesome Components
@@ -658,7 +658,7 @@ const Viewpage = () => {
         </div>
         {/* End Card Section */}
       </>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-purple-300 dark:bg-gray-900">
         <div className="container grid grid-cols-1 gap-10 px-6 py-12 mx-auto lg:grid-cols-3">
           <div>
             <p className="font-medium text-blue-500 dark:text-blue-400">
@@ -713,7 +713,7 @@ const Viewpage = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen bg-white dark:bg-gray-900 lg:flex">
+      <section className="min-h-screen bg-purple-100 dark:bg-gray-900 lg:flex">
         <div className="flex flex-col justify-center w-full p-8 lg:bg-gray-100 lg:dark:bg-gray-800 lg:px-12 xl:px-32 lg:w-1/2">
           <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">
             hire us.
@@ -835,7 +835,7 @@ const Viewpage = () => {
           </form>
         </div>
       </section>
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-purple-300 dark:bg-gray-900">
         <div className="container px-6 py-8 mx-auto">
           <div className="flex flex-col items-center text-center">
             <a href="#">
