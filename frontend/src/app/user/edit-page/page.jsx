@@ -1,4 +1,5 @@
 'use client';
+import { Formik } from 'formik';
 import React, { useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 
@@ -6,15 +7,10 @@ const EditPage = () => {
 
   const [currentUser, setCurrentUser] = useState(JSON.parse(sessionStorage.getItem('user')));
 
-  const [companyProfile, setCompanyProfile] = useState(null);
+  const [companyProfile, setCompanyProfile] = useState(currentUser.profile);
 
   console.log(currentUser);
 
-  useEffect(() => {
-    if (currentUser !== null) {
-
-    }
-  }, [currentUser])
 
   const updateUser = (data) => {
     fetch('http://localhost:5000/user/update/' + currentUser._id, {
@@ -29,6 +25,26 @@ const EditPage = () => {
           response.json()
             .then(data => {
               setCurrentUser(data);
+            })
+        }
+      }).catch((err) => {
+        console.log(err);
+      });
+  }
+
+  const updateProfile = (data) => {
+    fetch('http://localhost:5000/profile/update/' + companyProfile._id, {
+      method: 'PUT',
+      body: JSON.stringify(data),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then((response) => {
+        if (response.status === 200) {
+          response.json()
+            .then(data => {
+              setCompanyProfile(data);
             })
         }
       }).catch((err) => {
@@ -62,12 +78,9 @@ const EditPage = () => {
       });
   }
 
-  const fetchCompanyProfile = () => {
-
-  }
 
   return (
-    <div className='bg-red-200'>
+    <div className='bg-blue-200 '>
       {
         !currentUser.profile ?
           <button onClick={createNewProfile} className='px-5 py-3 bg-blue-600 text-white rounded'>Create Profile</button> :
@@ -76,7 +89,7 @@ const EditPage = () => {
               {/* Card Section */}
               <div className="max-w-4xl px-4 py-10 sm:px-6 lg:px-8 mx-auto">
                 {/* Card */}
-                <div className="bg-red-300 rounded-xl shadow p-4 sm:p-7 dark:bg-neutral-800">
+                <div className="bg-blue-100 rounded-xl shadow p-4 sm:p-7 dark:bg-neutral-800">
                   <div className="mb-8">
                     <h2 className="text-xl font-bold text-gray-800 dark:text-neutral-200">
                       Edit page
@@ -85,6 +98,9 @@ const EditPage = () => {
                       Manage your name, password and account settings.
                     </p>
                   </div>
+                  <Formik initialValues={companyProfile} onSubmit={updateProfile} >
+
+                  </Formik>
                   <form>
                     {/* Grid */}
                     <div className="grid sm:grid-cols-12 gap-2 sm:gap-6">
@@ -163,11 +179,7 @@ const EditPage = () => {
                             className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                             placeholder="Maria"
                           />
-                          <input
-                            type="text"
-                            className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                            placeholder="Boone"
-                          />
+
                         </div>
                       </div>
                       {/* End Col */}

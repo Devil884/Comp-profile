@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div>
-      <section className="bg-zinc-400 dark:bg-gray-900">
+    <div className='m-9'>
+      <section className="bg-purple-400 dark:bg-gray-900">
   <div className="container px-6 py-10 mx-auto">
     <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
       explore our <br /> Page{" "}
@@ -148,7 +148,7 @@ const About = () => {
     <div className="max-w-[85rem] px-4 py-12 sm:px-6 lg:px-8 lg:py-16 mx-auto">
       {/* Gradients */}
       <div aria-hidden="true" className="flex -z-[1] absolute start-0">
-        <div className="bg-black opacity-20 blur-3xl w-[1036px] h-[300px] dark:bg-purple-900 dark:opacity-20" />
+        <div className="bg-purple-400 blur-2xl w-[1280px] h-[300px] " />
       </div>
       {/* End Gradients */}
       {/* Grid */}
@@ -211,7 +211,7 @@ const About = () => {
 </>
 <>
   {/* Testimonials with Stats */}
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-zinc-300">
+  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-purple-300">
     {/* Grid */}
     <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between">
       <div className="lg:col-span-5 lg:col-start-1">
@@ -347,7 +347,7 @@ const About = () => {
   {/* End Testimonials with Stats */}
   <>
   {/* Testimonials */}
-  <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-zinc-300">
+  <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-purple-300">
     {/* Blockquote */}
     <blockquote className="text-center lg:mx-auto lg:w-3/5">
       <svg
@@ -402,7 +402,7 @@ const About = () => {
 </>
 <>
   {/* Testimonials */}
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-black ">
+  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-purple-500 ">
     {/* Grid */}
     <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:gap-20 md:grid-cols-3 lg:grid-cols-5 lg:gap-8">
       {/* Icon Block */}

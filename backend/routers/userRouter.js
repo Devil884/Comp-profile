@@ -13,12 +13,8 @@ router.post('/add', (req, res) => {
         });
 });
 
-router.get('/delete', (req, res) => {
-    res.send('Response from user delete');
-});
-
 router.put('/update/:id', (req, res) => {
-    Model.findByIdAndUpdate(req.params.id, req.body, {new: true})
+    Model.findByIdAndUpdate(req.params.id, req.body, {new: true}).populate('profile')
     .then((result) => {
         res.status(200).json(result);
     }).catch((err) => {
@@ -39,7 +35,7 @@ router.get('/getall', (req, res) => {
 
 router.post('/authenticate', (req, res) => {
     console.log(req.body);
-    Model.findOne(req.body)
+    Model.findOne(req.body).populate('profile')
     .then((result) => {
         if(result) res.status(200).json(result);
         else res.status(400).json(result);

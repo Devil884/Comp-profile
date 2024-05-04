@@ -44,8 +44,9 @@ const Login = () => {
   })
 
   return (
-    <div>
-      <div className="w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-md dark:bg-gray-800">
+    <div  >
+    <div style={{ height:"40rem",  }} className='bg-purple-500 p-20'   >
+      <div className="w-full max-w-sm mx-auto overflow-hidden bg-purple-300 rounded-lg shadow-md dark:bg-gray-800">
         <div className="px-6 py-4">
           <div className="flex justify-center mx-auto">
             <img
@@ -108,7 +109,7 @@ const Login = () => {
           </Link>
         </div>
       </div>
-
+</div>
     </div>
   )
 }

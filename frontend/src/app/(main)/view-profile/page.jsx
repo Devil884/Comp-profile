@@ -940,8 +940,6 @@ const Viewpage = () => {
           </div>
         </div>
       </footer>
-
-
     </div>
   )
 }

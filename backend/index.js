@@ -23,12 +23,7 @@ app.get('/', (req, res) => {
     res.send('Response from express');
 });
 
-app.get('/add', (req, res) => {
-    res.send('Response from add');
-});
-
-// delete
-// update
+app.use(express.static('./static/uploads'));
 
 // start server
 app.listen(port, () => { console.log('server started'); });
