@@ -28,7 +28,7 @@ const BrowseProfile = () => {
   const displayProfiles = () => {
     return profileList.map(profile => (
       <Link
-        href="/"
+        href={"/view-profile/"+profile._id}
         aria-label="View Item"
         className="inline-block overflow-hidden duration-300 transform bg-white rounded shadow-sm hover:-translate-y-2"
       >
@@ -41,11 +41,10 @@ const BrowseProfile = () => {
           <div className="flex-grow border border-t-0 rounded-b">
             <div className="p-5">
               <h6 className="mb-2 font-semibold leading-5">
-                Schools & College
+                {profile.name}
               </h6>
               <p className="text-sm text-gray-900">
-                Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit.
+                {profile.about}
               </p>
             </div>
           </div>

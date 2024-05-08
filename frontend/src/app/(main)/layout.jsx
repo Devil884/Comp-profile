@@ -6,9 +6,9 @@ const Layout = ({ children }) => {
     return (
         <>
         <Navbar/>
-       
+       <div className='mt-12'>
         {children}
-       
+        </div>
            
         </>
     )

@@ -16,6 +16,7 @@ router.post('/add', (req, res) => {
 router.put('/update/:id', (req, res) => {
     Model.findByIdAndUpdate(req.params.id, req.body, {new: true}).populate('profile')
     .then((result) => {
+        console.log(result);
         res.status(200).json(result);
     }).catch((err) => {
         res.status(500).json(err);

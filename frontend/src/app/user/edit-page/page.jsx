@@ -21,10 +21,12 @@ const EditPage = () => {
       }
     })
       .then((response) => {
+        console.log(response.status);
         if (response.status === 200) {
           response.json()
             .then(data => {
               setCurrentUser(data);
+              sessionStorage.setItem('user', JSON.stringify(data));
             })
         }
       }).catch((err) => {
@@ -47,6 +49,7 @@ const EditPage = () => {
             .then(data => {
               console.log(data);
               setCompanyProfile(data);
+              toast.success('Profile Updated')
             })
         }
       }).catch((err) => {
@@ -82,14 +85,14 @@ const EditPage = () => {
 
 
   return (
-    <div className='bg-blue-200 '>
+    <>
       {
         !currentUser.profile ?
           <button onClick={createNewProfile} className='px-5 py-3 bg-blue-600 text-white rounded'>Create Profile</button> :
           (
             <div><>
               {/* Card Section */}
-              <div className="max-w-4xl px-4 py-10 sm:px-6 lg:px-8 mx-auto">
+              <div className="w-full px-4 py-10 sm:px-6 lg:px-8 ">
                 {/* Card */}
                 <div className="bg-blue-100 rounded-xl shadow p-4 sm:p-7 dark:bg-neutral-800">
                   <div className="mb-8">
@@ -221,7 +224,7 @@ const EditPage = () => {
                                 <input
                                   id="address"
                                   onChange={handleChange}
-                                  value={values.Addres}
+                                  value={values.addres}
                                   type="text"
                                   className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                   placeholder="Enter your address"
@@ -292,9 +295,9 @@ const EditPage = () => {
                             <div className="sm:col-span-9">
                               <div className="space-y-2">
                                 <input
-                                  id="City"
+                                  id="city"
                                   onChange={handleChange}
-                                  value={values.City}
+                                  value={values.city}
                                   type="text"
                                   className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                   placeholder="Enter your city"
@@ -314,9 +317,9 @@ const EditPage = () => {
                             <div className="sm:col-span-9">
                               <div className="space-y-2">
                                 <input
-                                  id="State"
+                                  id="state"
                                   onChange={handleChange}
-                                  value={values.State}
+                                  value={values.state}
                                   type="text"
                                   className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                   placeholder="Enter your state"
@@ -336,9 +339,9 @@ const EditPage = () => {
                             <div className="sm:col-span-9">
                               <div className="space-y-2">
                                 <input
-                                  id="Zip code"
+                                  id="zip code"
                                   onChange={handleChange}
-                                  value={values.Zipcode}
+                                  value={values.zipcode}
                                   type="text"
                                   className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                   placeholder="Enter your Zip code"
@@ -360,11 +363,35 @@ const EditPage = () => {
                                 <input
                                   id="industry"
                                   onChange={handleChange}
-                                  value={values.Industry}
+                                  value={values.industry}
                                   type="text"
                                   className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
                                   placeholder="Enter your Industry"
                                 />
+
+                              </div>
+                            </div>
+                            
+                            <div className="sm:col-span-3">
+                              <label
+                                htmlFor="af-account-password"
+                                className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200"
+                              >
+                                About
+                              </label>
+                            </div>
+                            {/* End Col */}
+                            <div className="sm:col-span-9">
+                              <div className="space-y-2">
+                                <textarea
+                                  id="about"
+                                  onChange={handleChange}
+                                  value={values.about}
+                                  type="text"
+                                  rows={4}
+                                  className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
+                                  placeholder="Enter your Industry"
+                                ></textarea>
 
                               </div>
                             </div>
@@ -392,7 +419,7 @@ const EditPage = () => {
             </div>
           )
       }
-    </div>
+    </>
   )
 }
 

@@ -3,19 +3,19 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div>
-            <div >
-        <nav className="bg-[url('https://t4.ftcdn.net/jpg/04/02/04/73/360_F_402047366_rf4lUSBJTxUFuCkbqLsIxzpmdZg8iGvP.jpg')] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+            <div className=''>
+        <nav className="bg-purple-200 dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 ">
+          <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 ">
             <a
               href="https://flowbite.com/"
               className="flex items-center space-x-3 rtl:space-x-reverse"
             >
               <img
-                src="https://flowbite.com/docs/images/logo.svg"
+                src=""
                 className="h-8"
-                alt="Flowbite Logo"
+                alt=""
               />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap text-black">
                 Company profile
               </span>
             </a>
