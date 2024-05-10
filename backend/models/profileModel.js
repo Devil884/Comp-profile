@@ -10,6 +10,7 @@ const mySchema = new Schema({
     city: String,
     state: String,
     zipcode: String,
+    country: String,
     contact: String,
     createdAt: { type : Date, default: Date.now }
 });

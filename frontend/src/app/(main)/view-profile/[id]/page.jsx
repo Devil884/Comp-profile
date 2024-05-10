@@ -655,41 +655,34 @@ const Viewpage = () => {
           </div>
           <div className="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2">
             <div>
-              <h2 className="font-medium text-gray-800 dark:text-white">{companyDetails.city}</h2>
+              <h2 className="font-medium text-gray-800 dark:text-white">City</h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
-                100 Flinders Street <br /> Melbourne VIC 3000 AU
+              {companyDetails.city}
               </p>
             </div>
             <div>
-              <h2 className="font-medium text-gray-800 dark:text-white">{companyDetails.state}</h2>
+              <h2 className="font-medium text-gray-800 dark:text-white">State</h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
-                100 Oxford Street <br /> London W1D 1LL UK
+              {companyDetails.state}
               </p>
             </div>
             <div>
-              <h2 className="font-medium text-gray-800 dark:text-white">{companyDetails.zipcode}</h2>
+              <h2 className="font-medium text-gray-800 dark:text-white">Zipcode</h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
-                100 Flinders Street <br /> Melbourne VIC 3000 AU
+              {companyDetails.zipcode}
+              </p>
+            </div>
+           
+            <div>
+              <h2 className="font-medium text-gray-800 dark:text-white">country</h2>
+              <p className="mt-2 text-gray-500 dark:text-gray-400">
+              {companyDetails.country}
               </p>
             </div>
             <div>
-              <h2 className="font-medium text-gray-800 dark:text-white">
-                San Francisco
-              </h2>
+              <h2 className="font-medium text-gray-700 dark:text-gray-200">Industry</h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
-                100 Flinders Street <br /> Melbourne VIC 3000 AU
-              </p>
-            </div>
-            <div>
-              <h2 className="font-medium text-gray-800 dark:text-white">{companyDetails.country}</h2>
-              <p className="mt-2 text-gray-500 dark:text-gray-400">
-                100 Flinders Street <br /> Melbourne VIC 3000 AU
-              </p>
-            </div>
-            <div>
-              <h2 className="font-medium text-gray-700 dark:text-gray-200">Sweden</h2>
-              <p className="mt-2 text-gray-500 dark:text-gray-400">
-                100 Flinders Street <br /> Melbourne VIC 3000 AU
+              {companyDetails.industry}
               </p>
             </div>
           </div>

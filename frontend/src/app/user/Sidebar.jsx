@@ -7,7 +7,7 @@ const Sidebar = () => {
                 <a href="#" className="mx-auto">
                     <img
                         className="w-auto h-6 sm:h-7"
-                        src="https://merakiui.com/images/full-logo.svg"
+                        src=""
                         alt=""
                     />
                 </a>
