@@ -2,7 +2,7 @@ import React from 'react'
 
 const ManagePage = () => {
   return (
-    <div>
+    <div className='ml-10'>
       <div className="flex items-center py-4 overflow-x-auto whitespace-nowrap">
         <a href="#" className="text-gray-600 dark:text-gray-200">
           <svg

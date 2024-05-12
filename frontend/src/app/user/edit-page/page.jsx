@@ -92,9 +92,9 @@ const EditPage = () => {
           (
             <div><>
               {/* Card Section */}
-              <div className="w-full px-4 py-10 sm:px-6 lg:px-8 ">
+              <div className="w-full  ">
                 {/* Card */}
-                <div className="bg-blue-100 rounded-xl shadow p-4 sm:p-7 dark:bg-neutral-800">
+                <div className="bg-blue-100 rounded-xl shadow p-4 sm:p-7 ">
                   <div className="mb-8">
                     <h2 className="text-xl font-bold text-gray-800 dark:text-neutral-200">
                       Edit page

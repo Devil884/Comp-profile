@@ -4,7 +4,7 @@ const AdminDashboard = () => {
   return (
     <div><>
     {/* ========== HEADER ========== */}
-    <header className="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-[48] w-full bg-white border-b text-sm py-2.5 sm:py-4 lg:ps-64 dark:bg-neutral-800 dark:border-neutral-700">
+    <header className="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap z-[48] w-full bg-black border-b text-sm py-2.5 sm:py-4 lg:ps-64 dark:bg-neutral-800 dark:border-neutral-700">
       <nav
         className="flex basis-full items-center w-full mx-auto px-4 sm:px-6"
         aria-label="Global"
@@ -336,10 +336,10 @@ const AdminDashboard = () => {
     -translate-x-full transition-all duration-300 transform
     w-[260px]
     hidden
-    fixed inset-y-0 start-0 z-[60]
-    bg-white border-e border-gray-200
-    lg:block lg:translate-x-0 lg:end-auto lg:bottom-0
-    dark:bg-neutral-800 dark:border-neutral-700
+    fixed 
+    bg-blue-200
+    lg:block lg:translate-x-0 
+     
    "
     >
       <div className="px-8 pt-4">
@@ -347,7 +347,7 @@ const AdminDashboard = () => {
         <a
           className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
           href="../templates/admin/index.html"
-          aria-label="Preline"
+          aria-label="Admin"
         >
           <svg
             className="w-28 h-auto"
