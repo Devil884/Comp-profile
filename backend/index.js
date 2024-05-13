@@ -2,6 +2,7 @@
 const express = require('express');
 const userRouter = require('./routers/userRouter');
 const profileRouter = require('./routers/profileRouter');
+const utilRouter = require('./routers/util');
 const cors = require('cors');
 
 // initialize express
@@ -17,6 +18,9 @@ app.use(express.json());
 
 app.use('/user', userRouter);
 app.use('/profile', profileRouter);
+app.use('/util', utilRouter);
+
+app.use(express.static('./static/uploads'));
 
 // endpoint
 app.get('/', (req, res) => {

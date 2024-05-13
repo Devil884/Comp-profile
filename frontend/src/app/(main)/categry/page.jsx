@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import React from 'react'
 
-const Home = () => {
+const categry = () => {
   return (
     <div>
       <>
@@ -14,7 +15,7 @@ const Home = () => {
           </div>
           {/* End Title */}
           {/* Grid */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+          <Link href={'/browse-profile/hospital'} className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             <div className="text-center">
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
@@ -140,7 +141,7 @@ const Home = () => {
               </div>
             </div>
             {/* End Col */}
-          </div>
+          </Link>
           {/* End Grid */}
         </div>
         {/* End Team */}
@@ -150,4 +151,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default categry
