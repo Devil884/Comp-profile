@@ -27,43 +27,17 @@ const Viewpage = () => {
 
   const showDetails = () => {
     if (companyDetails !== null) {
-      return <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto">
+      return <div className="max-w-[85rem] sm:px-6  mx-auto bg-red-200">
         <div className="grid lg:grid-cols-3 gap-y-8 lg:gap-y-0 lg:gap-x-6">
           {/* Content */}
           <div className="lg:col-span-2">
             <div className="py-8 lg:pe-8">
               <div className="space-y-5 lg:space-y-8">
-                <a
-                  className="inline-flex items-center gap-x-1.5 text-sm text-gray-600 decoration-2 hover:underline dark:text-blue-500"
-                  href="#"
-                >
-                  <svg
-                    className="flex-shrink-0 size-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={24}
-                    height={24}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="m15 18-6-6 6-6" />
-                  </svg>
-                  Back to Blog
-                </a>
                 <h2 className="text-3xl font-bold lg:text-5xl text-black">
                   {companyDetails.name}
                 </h2>
                 <div className="flex items-center gap-x-5">
-                  <a
-                    className="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-800 dark:text-neutral-200"
-                    href="#"
-                  >
-                    Company News
-                  </a>
-                  <p className="text-xs sm:text-sm text-gray-800 dark:text-neutral-200">
+                 <p className="text-xs sm:text-sm text-gray-800 dark:text-neutral-200">
                     January 18, 2023
                   </p>
                 </div>
@@ -71,9 +45,7 @@ const Viewpage = () => {
                   {companyDetails.about}
                 </p>
                 <p className="text-lg text-gray-800 dark:text-neutral-200">
-                  We're proud to be a part of creating a more open culture and to
-                  continue building a product that supports this vision.
-                </p>
+                  </p>
                 <div className="text-center">
                   <div className="grid lg:grid-cols-2 gap-3">
                     <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
@@ -105,28 +77,10 @@ const Viewpage = () => {
                   </span>
                 </div>
                 <p className="text-lg text-gray-800 dark:text-neutral-200">
-                  As we've grown, we've seen how Preline has helped companies such
-                  as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their
-                  designers closer together to create amazing things. We've also
-                  learned that when the culture of sharing is brought in earlier,
-                  the better teams adapt and communicate with one another.
+                
                 </p>
-                <p className="text-lg text-gray-800 dark:text-neutral-200">
-                  That's why we are excited to share that we now have a{" "}
-                  <a
-                    className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
-                    href="#"
-                  >
-                    free version of Preline
-                  </a>
-                  , which will allow individual designers, startups and other small
-                  teams a chance to create a culture of openness early on.
-                </p>
+                
                 <blockquote className="text-center p-4 sm:px-7">
-                  <p className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal xl:text-2xl xl:leading-normal dark:text-neutral-200">
-                    To say that switching to Preline has been life-changing is an
-                    understatement. My business has tripled and I got my life back.
-                  </p>
                   <p className="mt-5 text-gray-800 dark:text-neutral-200">
                     Nicole Grazioso
                   </p>
@@ -143,83 +97,21 @@ const Viewpage = () => {
                 </figure>
                 <div className="space-y-3">
                   <h3 className="text-2xl font-semibold text-black">
-                    Bringing the culture of sharing to everyone
+                    text
                   </h3>
                   <p className="text-lg text-gray-800 dark:text-neutral-200">
-                    We know the power of sharing is real, and we want to create an
-                    opportunity for everyone to try Preline and explore how
-                    transformative open communication can be. Now you can have a
-                    team of one or two designers and unlimited spectators (think
-                    PMs, management, marketing, etc.) share work and explore the
-                    design process earlier.
+                    text here
+                    
                   </p>
                 </div>
                 <ul className="list-disc list-outside space-y-5 ps-5 text-lg text-gray-800 dark:text-neutral-200">
-                  <li className="ps-2">
-                    Preline allows us to collaborate in real time and is a really
-                    great way for leadership on the team to stay up-to-date with
-                    what everybody is working on,"{" "}
-                    <a
-                      className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
-                      href="#"
-                    >
-                      said
-                    </a>{" "}
-                    Stewart Scott-Curran, Intercom's Director of Brand Design.
-                  </li>
-                  <li className="ps-2">
-                    Preline opened a new way of sharing. It's a persistent way for
-                    everyone to see and absorb each other's work," said David Scott,
-                    Creative Director at{" "}
-                    <a
-                      className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
-                      href="#"
-                    >
-                      Eventbrite
-                    </a>
-                    .
-                  </li>
+                  
                 </ul>
                 <p className="text-lg text-gray-800 dark:text-neutral-200">
-                  Small teams and individual designers need a space where they can
-                  watch the design process unfold, both for themselves and for the
-                  people they work with – no matter if it's a fellow designer,
-                  product manager, developer or client. Preline allows you to invite
-                  more people into the process, creating a central place for
-                  conversation around design. As those teams grow, transparency and
-                  collaboration becomes integrated in how they communicate and work
-                  together.
+                 text
                 </p>
                 <div className="grid lg:flex lg:justify-between lg:items-center gap-y-5 lg:gap-y-0">
-                  {/* Badges/Tags */}
-                  <div>
-                    <a
-                      className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                      href="#"
-                    >
-                      Plan
-                    </a>
-                    <a
-                      className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                      href="#"
-                    >
-                      Web development
-                    </a>
-                    <a
-                      className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                      href="#"
-                    >
-                      Free
-                    </a>
-                    <a
-                      className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
-                      href="#"
-                    >
-                      Team
-                    </a>
-                  </div>
-                  {/* End Badges/Tags */}
-                  <div className="flex justify-end items-center gap-x-1.5">
+              <div className="flex justify-end items-center gap-x-1.5">
                     {/* Button */}
                     <div className="hs-tooltip inline-block">
                       <button
@@ -391,107 +283,124 @@ const Viewpage = () => {
           </div>
           {/* End Content */}
           {/* Sidebar */}
-          <div className="lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r lg:from-gray-50 lg:via-transparent lg:to-transparent dark:from-neutral-800">
-            <div className="sticky top-0 start-0 py-8 lg:ps-8">
-              {/* Avatar Media */}
-              <div className="group flex items-center gap-x-3 border-b border-gray-200 pb-8 mb-8 dark:border-neutral-700">
-                <a className="block flex-shrink-0" href="#">
-                  <img
-                    className="size-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
-                    alt="Image Description"
-                  />
-                </a>
-                <a className="group grow block" href="">
-                  <h5 className="group-hover:text-gray-600 text-sm font-semibold text-gray-800 dark:group-hover:text-neutral-400 dark:text-neutral-200">
-                    Atul Chauhan
-                  </h5>
-                  <p className="text-sm text-gray-500 dark:text-neutral-500">
-                    UI/UX enthusiast
-                  </p>
-                </a>
-                <div className="grow">
-                  <div className="flex justify-end">
-                    <button
-                      type="button"
-                      className="py-1.5 px-2.5 inline-flex items-center gap-x-2 text-xs font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-                    >
-                      <svg
-                        className="flex-shrink-0 size-4"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={24}
-                        height={24}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      >
-                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                        <circle cx={9} cy={7} r={4} />
-                        <line x1={19} x2={19} y1={8} y2={14} />
-                        <line x1={22} x2={16} y1={11} y2={11} />
-                      </svg>
-                      Follow
-                    </button>
-                  </div>
-                </div>
-              </div>
-              {/* End Avatar Media */}
-              <div className="space-y-6">
-                {/* Media */}
-                <a className="group flex items-center gap-x-6" href="#">
-                  <div className="grow">
-                    <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-neutral-200 dark:group-hover:text-blue-500">
-                      5 Reasons to Not start a UX Designer Career in 2022/2023
-                    </span>
-                  </div>
-                  <div className="flex-shrink-0 relative rounded-lg overflow-hidden size-20">
-                    <img
-                      className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                      src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                      alt="Image Description"
-                    />
-                  </div>
-                </a>
-                {/* End Media */}
-                {/* Media */}
-                <a className="group flex items-center gap-x-6" href="#">
-                  <div className="grow">
-                    <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-neutral-200 dark:group-hover:text-blue-500">
-                      If your UX Portfolio has this 20% Well Done, it Will Give You
-                      an 80% Result
-                    </span>
-                  </div>
-                  <div className="flex-shrink-0 relative rounded-lg overflow-hidden size-20">
-                    <img
-                      className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                      src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                      alt="Image Description"
-                    />
-                  </div>
-                </a>
-                {/* End Media */}
-                {/* Media */}
-                <a className="group flex items-center gap-x-6" href="#">
-                  <div className="grow">
-                    <span className="text-sm font-bold text-gray-800 group-hover:text-blue-600 dark:text-neutral-200 dark:group-hover:text-blue-500">
-                      7 Principles of Icon Design
-                    </span>
-                  </div>
-                  <div className="flex-shrink-0 relative rounded-lg overflow-hidden size-20">
-                    <img
-                      className="size-full absolute top-0 start-0 object-cover rounded-lg"
-                      src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                      alt="Image Description"
-                    />
-                  </div>
-                </a>
-                {/* End Media */}
-              </div>
-            </div>
-          </div>
+         <div>
+          <br />
+         <a href="#" className="group relative block bg-black">
+  <img
+    alt=""
+    src="https://img.etimg.com/thumb/width-1200,height-1200,imgsize-122616,resizemode-75,msid-104651246/news/international/uae/dubai-forging-its-way-ahead-as-a-metaverse-metropolis.jpg"
+    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+      Developer
+    </p>
+    <p className="text-xl font-bold text-white sm:text-2xl">Tony Wayne</p>
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+        <p className="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+<br />
+<a href="#" className="group relative block bg-black">
+  <img
+    alt=""
+    src="https://i.pinimg.com/564x/8a/70/c0/8a70c0c7567f092f4a366be963407782.jpg"
+    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+      Best place
+    </p>
+    <p className="text-xl font-bold text-white sm:text-2xl">New World</p>
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+        <p className="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+<br />
+<a href="#" className="group relative block bg-black">
+  <img
+    alt=""
+    src="https://cdn.i-scmp.com/sites/default/files/styles/800x1200/public/d8/images/2019/11/01/1a_bmw_wanchaishowroom_finedata_1.jpg?itok=FG0haX09"
+    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+      Progress
+    </p>
+    <p className="text-xl font-bold text-white sm:text-2xl">Complete</p>
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+        <p className="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+<br />
+<a href="#" className="group relative block bg-black">
+  <img
+    alt=""
+    src="https://static.toiimg.com/photo/108442417.cms"
+    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+      Sky
+    </p>
+    <p className="text-xl font-bold text-white sm:text-2xl">Sky fall</p>
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+        <p className="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+<br />
+<a href="#" className="group relative block bg-black">
+  <img
+    alt=""
+    src="https://www.hindustantimes.com/ht-img/img/2023/12/21/900x1600/Goa_1703160163849_1703160164102.jpg"
+    className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+  />
+  <div className="relative p-4 sm:p-6 lg:p-8">
+    <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+      workers
+    </p>
+    <p className="text-xl font-bold text-white sm:text-2xl">Local</p>
+    <div className="mt-32 sm:mt-48 lg:mt-64">
+      <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+        <p className="text-sm text-white">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+          perferendis hic asperiores quibusdam quidem voluptates doloremque
+          reiciendis nostrum harum. Repudiandae?
+        </p>
+      </div>
+    </div>
+  </div>
+</a>
+
+         </div>
           {/* End Sidebar */}
         </div>
       </div>
@@ -500,12 +409,12 @@ const Viewpage = () => {
     }
   }
   if (companyDetails !== null){
-    return<div className='m-7 bg-purple-300 p-20'>
+    return<div className='m-7 bg-white p-20'>
   
 
       {showDetails()}
       
-      <section className="bg-purple-300 dark:bg-gray-900">
+      <section className="bg-red-200 dark:bg-gray-900">
         <div className="container grid grid-cols-1 gap-10 px-6 py-12 mx-auto lg:grid-cols-3">
           <div>
             <p className="font-medium text-blue-500 dark:text-blue-400">
@@ -553,129 +462,8 @@ const Viewpage = () => {
           </div>
         </div>
       </section>
-      <section className="min-h-screen bg-purple-300 dark:bg-gray-900 lg:flex">
-        <div className="flex flex-col justify-center w-full p-8 bg-[url('https://c02.purpledshub.com/uploads/sites/48/2022/03/will-earth-fall-into-a-black-hole-d5e77d0.jpg')] rounded-3xl  lg:px-12 xl:px-32 lg:w-1/2">
-          <h1 className="text-2xl font-semibold text-gray-800 capitalize text-white lg:text-3xl">
-            hire us.
-          </h1>
-          <p className="mt-4 text-gray-500 text-white">
-            Ask us everything and we would love to hear from you
-          </p>
-          <div className="mt-6 md:mt-8">
-            <h3 className="font-medium text-gray-600 dark:text-gray-300 ">
-              Follow us
-            </h3>
-            <div className="flex mt-4 -mx-1.5 ">
-              <a
-                className="mx-1.5 dark:hover:text-blue-400 text-black transition-colors duration-300 transform hover:text-blue-500"
-                href="#"
-              >
-                <svg
-                  className="w-10 h-10 fill-current"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M18.6668 6.67334C18.0002 7.00001 17.3468 7.13268 16.6668 7.33334C15.9195 6.49001 14.8115 6.44334 13.7468 6.84201C12.6822 7.24068 11.9848 8.21534 12.0002 9.33334V10C9.83683 10.0553 7.91016 9.07001 6.66683 7.33334C6.66683 7.33334 3.87883 12.2887 9.3335 14.6667C8.0855 15.498 6.84083 16.0587 5.3335 16C7.53883 17.202 9.94216 17.6153 12.0228 17.0113C14.4095 16.318 16.3708 14.5293 17.1235 11.85C17.348 11.0351 17.4595 10.1932 17.4548 9.34801C17.4535 9.18201 18.4615 7.50001 18.6668 6.67268V6.67334Z" />
-                </svg>
-              </a>
-              <a
-                className="mx-1.5 dark:hover:text-blue-400 text-black transition-colors duration-300 transform hover:text-blue-500"
-                href="#"
-              >
-                <svg
-                  className="w-8 h-8"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15.2 8.80005C16.4731 8.80005 17.694 9.30576 18.5941 10.2059C19.4943 11.1061 20 12.327 20 13.6V19.2H16.8V13.6C16.8 13.1757 16.6315 12.7687 16.3314 12.4687C16.0313 12.1686 15.6244 12 15.2 12C14.7757 12 14.3687 12.1686 14.0687 12.4687C13.7686 12.7687 13.6 13.1757 13.6 13.6V19.2H10.4V13.6C10.4 12.327 10.9057 11.1061 11.8059 10.2059C12.7061 9.30576 13.927 8.80005 15.2 8.80005Z"
-                    fill="currentColor"
-                  />
-                  <path d="M7.2 9.6001H4V19.2001H7.2V9.6001Z" fill="currentColor" />
-                  <path
-                    d="M5.6 7.2C6.48366 7.2 7.2 6.48366 7.2 5.6C7.2 4.71634 6.48366 4 5.6 4C4.71634 4 4 4.71634 4 5.6C4 6.48366 4.71634 7.2 5.6 7.2Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-              <a
-                className="mx-1.5 dark:hover:text-blue-400 text-black transition-colors duration-300 transform hover:text-blue-500"
-                href="#"
-              >
-                <svg
-                  className="w-8 h-8"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7 10.2222V13.7778H9.66667V20H13.2222V13.7778H15.8889L16.7778 10.2222H13.2222V8.44444C13.2222 8.2087 13.3159 7.9826 13.4826 7.81591C13.6493 7.64921 13.8754 7.55556 14.1111 7.55556H16.7778V4H14.1111C12.9324 4 11.8019 4.46825 10.9684 5.30175C10.1349 6.13524 9.66667 7.2657 9.66667 8.44444V10.2222H7Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-              <a
-                className="mx-1.5 dark:hover:text-blue-400 text-black transition-colors duration-300 transform hover:text-blue-500"
-                href="#"
-              >
-                <svg
-                  className="w-8 h-8"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.9294 7.72275C9.65868 7.72275 7.82715 9.55428 7.82715 11.825C7.82715 14.0956 9.65868 15.9271 11.9294 15.9271C14.2 15.9271 16.0316 14.0956 16.0316 11.825C16.0316 9.55428 14.2 7.72275 11.9294 7.72275ZM11.9294 14.4919C10.462 14.4919 9.26239 13.2959 9.26239 11.825C9.26239 10.354 10.4584 9.15799 11.9294 9.15799C13.4003 9.15799 14.5963 10.354 14.5963 11.825C14.5963 13.2959 13.3967 14.4919 11.9294 14.4919ZM17.1562 7.55495C17.1562 8.08692 16.7277 8.51178 16.1994 8.51178C15.6674 8.51178 15.2425 8.08335 15.2425 7.55495C15.2425 7.02656 15.671 6.59813 16.1994 6.59813C16.7277 6.59813 17.1562 7.02656 17.1562 7.55495ZM19.8731 8.52606C19.8124 7.24434 19.5197 6.10901 18.5807 5.17361C17.6453 4.23821 16.51 3.94545 15.2282 3.88118C13.9073 3.80621 9.94787 3.80621 8.62689 3.88118C7.34874 3.94188 6.21341 4.23464 5.27444 5.17004C4.33547 6.10544 4.04628 7.24077 3.98201 8.52249C3.90704 9.84347 3.90704 13.8029 3.98201 15.1238C4.04271 16.4056 4.33547 17.5409 5.27444 18.4763C6.21341 19.4117 7.34517 19.7045 8.62689 19.7687C9.94787 19.8437 13.9073 19.8437 15.2282 19.7687C16.51 19.708 17.6453 19.4153 18.5807 18.4763C19.5161 17.5409 19.8089 16.4056 19.8731 15.1238C19.9481 13.8029 19.9481 9.84704 19.8731 8.52606ZM18.1665 16.5412C17.8881 17.241 17.349 17.7801 16.6456 18.0621C15.5924 18.4799 13.0932 18.3835 11.9294 18.3835C10.7655 18.3835 8.26272 18.4763 7.21307 18.0621C6.51331 17.7837 5.9742 17.2446 5.69215 16.5412C5.27444 15.488 5.37083 12.9888 5.37083 11.825C5.37083 10.6611 5.27801 8.15832 5.69215 7.10867C5.97063 6.40891 6.50974 5.8698 7.21307 5.58775C8.26629 5.17004 10.7655 5.26643 11.9294 5.26643C13.0932 5.26643 15.596 5.17361 16.6456 5.58775C17.3454 5.86623 17.8845 6.40534 18.1665 7.10867C18.5843 8.16189 18.4879 10.6611 18.4879 11.825C18.4879 12.9888 18.5843 15.4916 18.1665 16.5412Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col justify-center w-full p-8 pt-0 lg:w-1/2 lg:px-12 xl:px-24 ">
-          <form>
-            <div className="-mx-2 md:items-center md:flex">
-              <div className="flex-1 px-2">
-                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  placeholder="John Doe"
-                  className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                />
-              </div>
-              <div className="flex-1 px-2 mt-4 md:mt-0">
-                <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                  Email address
-                </label>
-                <input
-                  type="email"
-                  placeholder="johndoe@example.com"
-                  className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                />
-              </div>
-            </div>
-            <div className="w-full mt-4">
-              <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
-                Message
-              </label>
-              <textarea
-                className="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"
-                placeholder="Message"
-                defaultValue={""}
-              />
-            </div>
-            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
-              get in touch
-            </button>
-          </form>
-        </div>
-      </section>
-      <footer className="bg-purple-300 dark:bg-gray-900">
+    
+      <footer className="bg-red-200 dark:bg-gray-900">
         <div className="container px-6 py-8 mx-auto">
         
           <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />

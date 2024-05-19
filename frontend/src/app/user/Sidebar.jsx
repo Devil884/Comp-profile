@@ -3,7 +3,7 @@ import React from 'react'
 const Sidebar = () => {
     return (
        <div>
-            <aside className="flex flex-col w-64 h-screen px-4 py-8 overflow-y-auto bg-blue-100  dark:bg-gray-900 dark:border-gray-700 fixed">
+            <aside className="flex flex-col  h-screen px-4 py-8 overflow-y-auto bg-blue-100  dark:bg-gray-900 dark:border-gray-700 fixed">
                 <a href="#" className="mx-auto">
                     <img
                         className="w-auto h-6 sm:h-7"
