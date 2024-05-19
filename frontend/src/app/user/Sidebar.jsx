@@ -2,8 +2,9 @@ import React from 'react'
 
 const Sidebar = () => {
     return (
-       <div>
-            <aside className="flex flex-col  h-screen px-4 py-8 overflow-y-auto bg-blue-100  dark:bg-gray-900 dark:border-gray-700 fixed">
+        <div>
+
+            <aside className="flex flex-col w-[250px] h-screen px-4 py-8 overflow-y-auto bg-blue-100  dark:bg-gray-900 dark:border-gray-700 fixed">
                 <a href="#" className="mx-auto">
                     <img
                         className="w-auto h-6 sm:h-7"
@@ -44,7 +45,7 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            <span className="mx-4 font-medium">Dashboard</span>
+                            <span className="mx-4 font-medium"><link rel="stylesheet" href="./browse-profile" />profile</span>
                         </a>
                         <a
                             className="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
@@ -71,7 +72,7 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            <span className="mx-4 font-medium">Accounts</span>
+                            <span className="mx-4 font-medium">User</span>
                         </a>
                         <a
                             className="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
@@ -118,7 +119,7 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            <span className="mx-4 font-medium">Settings</span>
+                            <span className="mx-4 font-medium">Contact</span>
                         </a>
                     </nav>
                 </div>
