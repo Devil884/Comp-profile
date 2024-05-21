@@ -15,8 +15,8 @@ const categry = () => {
           </div>
           {/* End Title */}
           {/* Grid */}
-          <Link href={'/browse-profile/hospital'} className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
-            <div className="text-center">
+          <div  className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
+            <Link className="text-center" href={'/browse-profile/hospital'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://www.who.int/images/default-source/wpro/health-topic/hospitals/f8-11102016-my-6042.tmb-1024v.jpg?Culture=en&sfvrsn=57e1f33d_4"
@@ -27,7 +27,7 @@ const categry = () => {
                   Hospitals
                 </h3>
               </div>
-            </div>
+            </Link>
             {/* End Col */}
             <div className="text-center">
               <img
@@ -141,7 +141,7 @@ const categry = () => {
               </div>
             </div>
             {/* End Col */}
-          </Link>
+          </div>
           {/* End Grid */}
         </div>
         {/* End Team */}

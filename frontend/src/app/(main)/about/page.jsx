@@ -1,4 +1,5 @@
 import React from 'react'
+import 'flowbite';
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
             First Slide
           </span>
           <img
-            src="https://www.americancityandcounty.com/files/2021/04/smart-4168483_1920.jpg"
+            src="/alfa.png"
             className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
             alt="..."
           />
@@ -25,7 +26,7 @@ const About = () => {
         {/* Item 2 */}
         <div className="hidden duration-700 ease-in-out" data-carousel-item="">
           <img
-            src="https://www.urban.org/sites/default/files/2015/10/12/sanfran.jpg"
+            src="/alphabeta.webp"
             className="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
             alt="..."
           />

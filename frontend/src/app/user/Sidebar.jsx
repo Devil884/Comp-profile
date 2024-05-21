@@ -1,6 +1,12 @@
-import React from 'react'
+"use client"
+import React, { use } from 'react'
+import Link from 'next/link'
+import useUserContext from '@/context/UserContext';
 
 const Sidebar = () => {
+
+    const { loggedIn, logout } = useUserContext();
+
     return (
         <div>
 
@@ -45,7 +51,10 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            <span className="mx-4 font-medium"><a rel="stylesheet" href="./browse-profile" />profile</span>
+                            <span className="mx-4 font-medium">
+
+                                <Link href={'/user/view-page'}>View page</Link>
+                            </span>
                         </a>
                         <a
                             className="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
@@ -72,9 +81,12 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            
-                            <span className="mx-4 font-medium"> User</span>
-                          
+
+                            <span className="mx-4 font-medium">
+                                <Link href={'/user/profile'}>
+                                    User Profile
+                                </Link></span>
+
                         </a>
                         <a
                             className="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
@@ -94,7 +106,7 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            <span className="mx-4 font-medium">FAQ</span>
+                            <span className="mx-4 font-medium"> <Link href={''}>Help desk</Link></span>
                         </a>
                         <a
                             className="flex items-center px-4 py-2 mt-5 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
@@ -121,11 +133,22 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            <span className="mx-4 font-medium">Contact</span>
+                            <span className="mx-4 font-medium"> <Link href={'/main/contact'}>Contact</Link></span>
                         </a>
                     </nav>
+                    <div>
+
+                        <button
+                            onClick={logout}
+                            type="submit"
+                            className="py-2 px-3 text-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white  "
+                        >
+                            Logout
+                        </button>
+                    </div>
                 </div>
             </aside>
+
         </div>
     )
 }

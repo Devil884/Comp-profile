@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Profile = () => {
+
+   
+
   return (
     <div>
       <>
@@ -201,6 +204,39 @@ const Profile = () => {
                     defaultValue=""
                   />
                 </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="city">Contact</label>
+                  <input
+                    type="contact"
+                    name="contact"
+                    id="contact"
+                    className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    defaultValue=""
+                    placeholder="+xx-xxx-xxxx-xxxx"
+                  />
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="city">Industry</label>
+                  <input
+                    type="text"
+                    name="industry"
+                    id="industry"
+                    className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    defaultValue=""
+                    placeholder=""
+                  />
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="city">State</label>
+                  <input
+                    type="text"
+                    name="State"
+                    id="State"
+                    className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    defaultValue=""
+                    placeholder=""
+                  />
+                </div>
                 <div className="md:col-span-5 text-right">
                   <div className="inline-flex items-end">
                     <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -216,7 +252,7 @@ const Profile = () => {
       <a
         href="https://www.buymeacoffee.com/dgauderman"
         target="_blank"
-        className="md:absolute bottom-0 right-0 p-4 float-right"
+        className="md:absolute bottom-0 right-0 p-6 float-right animate-bounce"
       >
         <img
           src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg"

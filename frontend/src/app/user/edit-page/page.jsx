@@ -105,7 +105,7 @@ const EditPage = () => {
         !currentUser.profile ?
           <button onClick={createNewProfile} className='px-5 py-3 bg-blue-600 text-white rounded'>Create Profile</button> :
           (
-            <div className="bg-blue-100 rounded-xl shadow py-4 px-16 mx-auto " >
+            <div className="bg-blue-100 rounded-xl shadow py-4 px-16 mx-auto bg-[url('')]" >
               <div className="mb-8 text-center">
                 <h2 className="text-xl font-bold text-gray-800 dark:text-neutral-200">
                   Edit page
@@ -121,7 +121,7 @@ const EditPage = () => {
 
                       <div className="sm:col-span-3 ">
                         <label className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200">
-                          Profile photo
+                          <b>Enter your company detail's Here</b>
                         </label>
                       </div>
                       {/* End Col */}
@@ -241,7 +241,7 @@ const EditPage = () => {
                             onChange={handleChange}
                             value={values.contact}
                             type="text"
-                            className="py-2 px-3 pe-11 w-full text-center border-gray-200 shadow-sm last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm justify-item-center "
+                            className="py-2 px-3 pe-11 w-full  border-gray-200 shadow-sm last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm justify-item-center "
                             placeholder="+x(xxx)xxx-xx-xx"
                           />
                       </div>

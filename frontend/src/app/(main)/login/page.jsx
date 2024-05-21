@@ -1,4 +1,5 @@
 'use client';
+import useUserContext from '@/context/UserContext';
 import { useFormik } from 'formik'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation';
@@ -6,6 +7,8 @@ import React from 'react'
 import toast from 'react-hot-toast';
 
 const Login = () => {
+
+  const {setLoggedIn} = useUserContext();
 
   const router = useRouter();
 
@@ -29,6 +32,7 @@ const Login = () => {
             response.json()
             .then((data) => {
               console.log(data);
+              setLoggedIn(true);
               sessionStorage.setItem('user', JSON.stringify(data));
               router.push('/user/edit-page');
             })
