@@ -105,7 +105,7 @@ const EditPage = () => {
         !currentUser.profile ?
           <button onClick={createNewProfile} className='px-5 py-3 bg-blue-600 text-white rounded'>Create Profile</button> :
           (
-            <div className="bg-blue-200 rounded-xl shadow py-4 px-16 mx-auto " >
+            <div className="bg-blue-100 rounded-xl shadow py-4 px-16 mx-auto " >
               <div className="mb-8 text-center">
                 <h2 className="text-xl font-bold text-gray-800 dark:text-neutral-200">
                   Edit page

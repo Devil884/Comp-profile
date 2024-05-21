@@ -4,313 +4,230 @@ const Profile = () => {
   return (
     <div>
       <>
-  {/* Card Section */}
- 
-    {/* Card */}
-    <div className="bg-red-100 rounded-xl p-5 mr-1 ">
-
-    <a href="#" className="text-gray-600 dark:text-gray-200">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="w-5 h-5"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-      </svg>
-    </a>
-
-      <div className="mb-8">
-        <h2 className="text-xl font-bold text-gray-800 dark:text-neutral-200">
-          Profile
-        </h2>
-        <p className="text-sm text-gray-600 dark:text-neutral-400">
-          Manage your name, password and account settings.
+      <>
+  {/* component */}
+  <div className="min-h-screen p-6 bg-gray-100 flex items-center justify-center ">
+    <div className="container max-w-screen-lg mx-auto">
+      <div>
+        <h2 className="font-semibold text-xl text-gray-600">Wellcome back !</h2>
+        <p className="text-gray-500 mb-6">
+          Wanted to update your information.
         </p>
-      </div>
-      <form>
-        {/* Grid */}
-        <div className="grid sm:grid-cols-12 gap-2 sm:gap-6">
-          <div className="sm:col-span-3">
-            <label className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200">
-              Profile photo
-            </label>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-9">
-            <div className="flex items-center gap-5">
-              <img
-                className="inline-block size-16 rounded-full ring-2 ring-white dark:ring-neutral-900"
-                src="../assets/img/160x160/img1.jpg"
-                alt="Image Description"
-              />
-              <div className="flex gap-x-2">
-                <div>
-                  <button
-                    type="button"
-                    className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-                  >
-                    <svg
-                      className="flex-shrink-0 size-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width={24}
-                      height={24}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+        <div className="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+          <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+            <div className="text-gray-600">
+              <p className="font-medium text-lg">Personal Details</p>
+              <p>Please fill out all the fields.</p>
+              <br />
+              <div className="sm:col-span-9">
+                          <div className="gap-x-2 block ">
+                            <div>
+                              <br />
+                              <label
+                                htmlFor='upload-file'
+                                className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
+                              >
+                                <br />
+                                <svg
+                                  className="flex-shrink-0 size-4"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width={24}
+                                  height={24}
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth={2}
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                > 
+                                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                  <polyline points="17 8 12 3 7 8" />
+                                  <line x1={12} x2={12} y1={3} y2={15} />
+                                </svg>
+                                Upload photo
+                              </label>
+                              
+                            </div>
+                          </div>
+                      
+                      </div>
+            </div>
+
+            <div className="lg:col-span-2">
+              <div className="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                <div className="md:col-span-5">
+                  <label htmlFor="full_name">Full Name</label>
+                  <input
+                    type="text"
+                    name="full_name"
+                    id="full_name"
+                    className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    defaultValue=""
+                  />
+                </div>
+                <div className="md:col-span-5">
+                  <label htmlFor="email">Email Address</label>
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    defaultValue=""
+                    placeholder="email@domain.com"
+                  />
+                </div>
+                <div className="md:col-span-3">
+                  <label htmlFor="address">Address / Street</label>
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    defaultValue=""
+                    placeholder=""
+                  />
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="city">City</label>
+                  <input
+                    type="text"
+                    name="city"
+                    id="city"
+                    className="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    defaultValue=""
+                    placeholder=""
+                  />
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="country">Country / region</label>
+                  <div className="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+                    <input
+                      name="country"
+                      id="country"
+                      placeholder="Country"
+                      className="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
+                      defaultValue=""
+                    />
+                    <button
+                      tabIndex={-1}
+                      className="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600"
                     >
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                      <polyline points="17 8 12 3 7 8" />
-                      <line x1={12} x2={12} y1={3} y2={15} />
-                    </svg>
-                    Upload photo
-                  </button>
+                      <svg
+                        className="w-4 h-4 mx-2 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <line x1={18} y1={6} x2={6} y2={18} />
+                        <line x1={6} y1={6} x2={18} y2={18} />
+                      </svg>
+                    </button>
+                    <button
+                      tabIndex={-1}
+                      htmlFor="show_more"
+                      className="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600"
+                    >
+                      <svg
+                        className="w-4 h-4 mx-2 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <polyline points="18 15 12 9 6 15" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div className="md:col-span-2">
+                  <label htmlFor="state">State / province</label>
+                  <div className="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
+                    <input
+                      name="state"
+                      id="state"
+                      placeholder="State"
+                      className="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
+                      defaultValue=""
+                    />
+                    <button
+                      tabIndex={-1}
+                      className="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600"
+                    >
+                      <svg
+                        className="w-4 h-4 mx-2 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <line x1={18} y1={6} x2={6} y2={18} />
+                        <line x1={6} y1={6} x2={18} y2={18} />
+                      </svg>
+                    </button>
+                    <button
+                      tabIndex={-1}
+                      htmlFor="show_more"
+                      className="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600"
+                    >
+                      <svg
+                        className="w-4 h-4 mx-2 fill-current"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <polyline points="18 15 12 9 6 15" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div className="md:col-span-1">
+                  <label htmlFor="zipcode">Zipcode</label>
+                  <input
+                    type="text"
+                    name="zipcode"
+                    id="zipcode"
+                    className="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
+                    placeholder=""
+                    defaultValue=""
+                  />
+                </div>
+                <div className="md:col-span-5 text-right">
+                  <div className="inline-flex items-end">
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                      Submit
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* End Col */}
-          <div className="sm:col-span-3">
-            <label
-              htmlFor="af-account-full-name"
-              className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200"
-            >
-              Full name
-            </label>
-            <div className="hs-tooltip inline-block">
-              <button type="button" className="hs-tooltip-toggle ms-1">
-                <svg
-                  className="inline-block size-3 text-gray-400 dark:text-neutral-600"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={16}
-                  height={16}
-                  fill="currentColor"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-                </svg>
-              </button>
-              <span
-                className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible w-40 text-center z-10 py-1 px-2 bg-gray-900 text-xs font-medium text-white rounded shadow-sm dark:bg-neutral-700"
-                role="tooltip"
-              >
-                Displayed on public forums, such as Preline
-              </span>
-            </div>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-9">
-            <div className="sm:flex">
-              <input
-                id="af-account-full-name"
-                type="text"
-                className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                placeholder="Maria"
-              />
-              <input
-                type="text"
-                className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                placeholder="Boone"
-              />
-            </div>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-3">
-            <label
-              htmlFor="af-account-email"
-              className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200"
-            >
-              Email
-            </label>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-9">
-            <input
-              id="af-account-email"
-              type="email"
-              className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm text-sm rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-              placeholder="maria@site.com"
-            />
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-3">
-            <label
-              htmlFor="af-account-password"
-              className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200"
-            >
-              Password
-            </label>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-9">
-            <div className="space-y-2">
-              <input
-                id="af-account-password"
-                type="text"
-                className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                placeholder="Enter current password"
-              />
-              <input
-                type="text"
-                className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                placeholder="Enter new password"
-              />
-            </div>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-3">
-            <div className="inline-block">
-              <label
-                htmlFor="af-account-phone"
-                className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200"
-              >
-                Phone
-              </label>
-              <span className="text-sm text-gray-400 dark:text-neutral-600">
-                (Optional)
-              </span>
-            </div>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-9">
-            <div className="sm:flex">
-              <input
-                id="af-account-phone"
-                type="text"
-                className="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-                placeholder="+x(xxx)xxx-xx-xx"
-              />
-              <select className="py-2 px-3 pe-9 block w-full sm:w-auto border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600">
-                <option selected="">Mobile</option>
-                <option>Home</option>
-                <option>Work</option>
-                <option>Fax</option>
-              </select>
-            </div>
-            <p className="mt-3">
-              <a
-                className="inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500"
-                href="../docs/index.html"
-              >
-                <svg
-                  className="flex-shrink-0 size-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <circle cx={12} cy={12} r={10} />
-                  <path d="M8 12h8" />
-                  <path d="M12 8v8" />
-                </svg>
-                Add phone
-              </a>
-            </p>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-3">
-            <label
-              htmlFor="af-account-gender-checkbox"
-              className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200"
-            >
-              Gender
-            </label>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-9">
-            <div className="sm:flex">
-              <label
-                htmlFor="af-account-gender-checkbox"
-                className="flex py-2 px-3 w-full border border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-              >
-                <input
-                  type="radio"
-                  name="af-account-gender-checkbox"
-                  className="shrink-0 mt-0.5 border-gray-300 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-500 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                  id="af-account-gender-checkbox"
-                  defaultChecked=""
-                />
-                <span className="text-sm text-gray-500 ms-3 dark:text-neutral-400">
-                  Male
-                </span>
-              </label>
-              <label
-                htmlFor="af-account-gender-checkbox-female"
-                className="flex py-2 px-3 w-full border border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-              >
-                <input
-                  type="radio"
-                  name="af-account-gender-checkbox"
-                  className="shrink-0 mt-0.5 border-gray-300 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-500 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                  id="af-account-gender-checkbox-female"
-                />
-                <span className="text-sm text-gray-500 ms-3 dark:text-neutral-400">
-                  Female
-                </span>
-              </label>
-              <label
-                htmlFor="af-account-gender-checkbox-other"
-                className="flex py-2 px-3 w-full border border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-              >
-                <input
-                  type="radio"
-                  name="af-account-gender-checkbox"
-                  className="shrink-0 mt-0.5 border-gray-300 rounded-full text-blue-600 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-500 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
-                  id="af-account-gender-checkbox-other"
-                />
-                <span className="text-sm text-gray-500 ms-3 dark:text-neutral-400">
-                  Other
-                </span>
-              </label>
-            </div>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-3">
-            <label
-              htmlFor="af-account-bio"
-              className="inline-block text-sm text-gray-800 mt-2.5 dark:text-neutral-200"
-            >
-              BIO
-            </label>
-          </div>
-          {/* End Col */}
-          <div className="sm:col-span-9">
-            <textarea
-              id="af-account-bio"
-              className="py-2 px-3 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-              rows={6}
-              placeholder="Type your message..."
-              defaultValue={""}
-            />
-          </div>
-          {/* End Col */}
         </div>
-        {/* End Grid */}
-        <div className="mt-5 flex justify-end gap-x-2">
-          <button
-            type="button"
-            className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-          >
-            Cancel
-          </button>
-          <button
-            type="button"
-            className="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none"
-          >
-            Save changes
-          </button>
-        </div>
-      </form>
+      </div>
+      <a
+        href="https://www.buymeacoffee.com/dgauderman"
+        target="_blank"
+        className="md:absolute bottom-0 right-0 p-4 float-right"
+      >
+        <img
+          src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg"
+          alt="Buy Me A Coffee"
+          className="transition-all rounded-full w-14 -rotate-45 hover:shadow-sm shadow-lg ring hover:ring-4 ring-white"
+        />
+      </a>
     </div>
+  </div>
+</>
+
     
 </>
 

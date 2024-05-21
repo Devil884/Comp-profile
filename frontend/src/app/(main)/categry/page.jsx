@@ -6,10 +6,10 @@ const categry = () => {
     <div>
       <>
         {/* Team */}
-        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-blue-200">
           {/* Title */}
           <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-black">
+            <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-white">
               Find your needs here
             </h2>
           </div>
@@ -19,7 +19,7 @@ const categry = () => {
             <div className="text-center">
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://static.vecteezy.com/system/resources/previews/011/640/711/non_2x/simple-modern-hospital-logo-with-healthcare-medical-template-vector.jpg"
+                src="https://www.who.int/images/default-source/wpro/health-topic/hospitals/f8-11102016-my-6042.tmb-1024v.jpg?Culture=en&sfvrsn=57e1f33d_4"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
@@ -32,7 +32,7 @@ const categry = () => {
             <div className="text-center">
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpQRIlujTgaTe5ghbWRR0ti0z3oKxPpu44GWxv_90hFg&s"
+                src="https://c.ndtvimg.com/2024-01/nmncfji_indian-cuisine_625x300_26_January_24.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
@@ -46,7 +46,7 @@ const categry = () => {
             <div className="text-center">
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c343ae72-a1bc-4b67-86a1-6544ea9dcf2d/dap66me-8e49fe82-5200-4538-afbd-830fa904c032.jpg/v1/fill/w_1024,h_792,q_75,strp/hogwarts_school_crest___harry_potter_by_jerseycar2_dap66me-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzkyIiwicGF0aCI6IlwvZlwvYzM0M2FlNzItYTFiYy00YjY3LTg2YTEtNjU0NGVhOWRjZjJkXC9kYXA2Nm1lLThlNDlmZTgyLTUyMDAtNDUzOC1hZmJkLTgzMGZhOTA0YzAzMi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.l5EoRZO8p_0HhtyYvlmNbX8pjnfG3u5ky-XLiujU864"
+                src="https://www.research-in-germany.org/dam/jcr:1e10a168-41cc-4655-8923-86da01270076/school_iStock-1358014313.jpg"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
