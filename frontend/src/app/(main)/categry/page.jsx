@@ -29,7 +29,7 @@ const categry = () => {
               </div>
             </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center" href={'/browse-profile/Cafe'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://c.ndtvimg.com/2024-01/nmncfji_indian-cuisine_625x300_26_January_24.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738"
@@ -41,9 +41,9 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center"href={'/browse-profile/school&college'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://www.research-in-germany.org/dam/jcr:1e10a168-41cc-4655-8923-86da01270076/school_iStock-1358014313.jpg"
@@ -55,9 +55,9 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center"href={'/browse-profile/appartment'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://bcassetcdn.com/public/blog/wp-content/uploads/2023/07/28140224/Urban-City-Apartment-by-marcololstudio.png"
@@ -69,9 +69,9 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center"href={'/browse-profile/carservice'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjfgHnoWxAHcVbR9bEhgX7CHJJkcCacf33Z0y2cARCQ&s"
@@ -83,9 +83,9 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center"href={'/browse-profile/malls'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://static.vecteezy.com/system/resources/previews/007/526/988/original/building-mall-icon-logo-design-template-flat-style-trendy-free-vector.jpg"
@@ -97,9 +97,9 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center"href={'/browse-profile/coching&institude'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3BG3XzFo9UB4j8qxiLg2_OxGBBMl7El2qqPkSXxr4cw&s"
@@ -111,9 +111,9 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center"href={'/browse-profile/publicservice'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8as0wkJyMzUTiQgG0QTgNmZtG2ybwFPJCCTJHUH1iyA&s"
@@ -125,9 +125,9 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
-            <div className="text-center">
+            <Link className="text-center"href={'/browse-profile/hotel'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
                 src="https://img.freepik.com/premium-vector/hotel-icon-logo-vector-design-template_827767-3569.jpg"
@@ -139,7 +139,7 @@ const categry = () => {
                 </h3>
 
               </div>
-            </div>
+            </Link>
             {/* End Col */}
           </div>
           {/* End Grid */}

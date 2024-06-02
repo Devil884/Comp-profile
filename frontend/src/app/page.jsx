@@ -1,6 +1,60 @@
+'use client';
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import StarRatings from "react-star-ratings";
 
 export const Content = () => {
+
+  const [feedbackList, setFeedbackList] = useState([]);
+
+  const fetchFeedbacks = () => {
+    fetch('http://localhost:5000/feedback/getall')
+      .then((response) => {
+        response.json()
+          .then((data) => {
+            console.log(data);
+            setFeedbackList(data);
+          })
+      })
+  }
+
+  useEffect(() => {
+    fetchFeedbacks();
+  }, [])
+
+  const displayFeedbacks = () => {
+    return feedbackList.map((feedback) => (
+      <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
+        <StarRatings
+          rating={feedback.rating}
+          starRatedColor="yellow"
+          numberOfStars={5}
+          starDimension="30px"
+          starSpacing="15px"
+        />
+        <div className="text-center text-gray-600">
+          {feedback.feedback}
+        </div>
+        <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
+          <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+            <img
+              src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
+              loading="lazy"
+              alt="Photo by Radu Florin"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
+              {feedback.user.name}
+            </div>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+
+
   return (
     <div>
       <>
@@ -26,8 +80,8 @@ export const Content = () => {
                 </svg>
                 ComPro
               </a>
-             
-             
+
+
               <button
                 type="button"
                 className="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden"
@@ -62,13 +116,13 @@ export const Content = () => {
                 </p>
                 <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
                   <Link
-                    href="./browse-profile"
+                    href="./categry"
                     className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base animate-bounce"
                   >
                     Start now
                   </Link>
-                 
-                  
+
+
                 </div>
               </div>
               {/* content - end */}
@@ -365,83 +419,7 @@ export const Content = () => {
             </h2>
             <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
               {/* quote - start */}
-              <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-                <div className="text-center text-gray-600">
-                  “This is a section of some simple filler text, also known as
-                  placeholder text.”
-                </div>
-                <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-                  <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-                    <img
-                      src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
-                      loading="lazy"
-                      alt="Photo by Radu Florin"
-                      className="h-full w-full object-cover object-center"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                      John McCulling
-                    </div>
-                    <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                      CEO / Datadrift
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* quote - end */}
-              {/* quote - start */}
-              <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-                <div className="text-center text-gray-600">
-                  “This is a section of some simple filler text, also known as
-                  placeholder text.”
-                </div>
-                <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-                  <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-                    <img
-                      src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
-                      loading="lazy"
-                      alt="Photo by christian ferrer"
-                      className="h-full w-full object-cover object-center"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                      Kate Berg
-                    </div>
-                    <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                      CFO / Dashdash
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* quote - end */}
-              {/* quote - start */}
-              <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-                <div className="text-center text-gray-600">
-                  “This is a section of some simple filler text, also known as
-                  placeholder text.”
-                </div>
-                <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-                  <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-                    <img
-                      src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
-                      loading="lazy"
-                      alt="Photo by Ayo Ogunseinde"
-                      className="h-full w-full object-cover object-center"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                      Greg Jackson
-                    </div>
-                    <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                      CTO / Uptime
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* quote - end */}
+              {displayFeedbacks()}
             </div>
           </div>
         </div>

@@ -53,7 +53,7 @@ const Sidebar = () => {
                             </svg>
                             <span className="mx-4 font-medium">
 
-                                <Link href={'/user/view-page'}>View page</Link>
+                                <Link href={'/user/edit-page'}>Company page</Link>
                             </span>
                         </a>
                         <a
