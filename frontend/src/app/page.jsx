@@ -38,9 +38,9 @@ export const Content = () => {
         <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
           <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
             <img
-              src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
+              src=""
               loading="lazy"
-              alt="Photo by Radu Florin"
+              alt=""
               className="h-full w-full object-cover object-center"
             />
           </div>
@@ -58,21 +58,21 @@ export const Content = () => {
   return (
     <div>
       <>
-        {/* hero - start */}
-        <div className="bg-purple-300 pb-6 sm:pb-8 lg:pb-12">
+       
+        <div className="bg-white-300 pb-6 sm:pb-8 lg:pb-12">
           <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
             <header className="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
               {/* logo - start */}
               <a
                 href="/"
-                className="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
+                className="inline-flex items-center gap-5.5 text-2xl font-bold text-black md:text-3xl"
                 aria-label="logo"
               >
                 <svg
                   width={95}
                   height={94}
                   viewBox="0 0 95 94"
-                  className="h-auto w-6 text-indigo-500"
+                  className="h-auto w-6 text-indigo-500 "
                   fill="currentColor"
                   xmlns=""
                 >
@@ -129,9 +129,9 @@ export const Content = () => {
               {/* image - start */}
               <div className="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
                 <img
-                  src="https://housing.com/news/wp-content/uploads/2023/08/Top-MNC-companies-in-Hyderabad-f.jpg"
+                  src="https://img.clipart-library.com/24/afed5dbb-bfc0-44ee-ad2f-7ea1ceb40b0b.png"
                   loading="lazy"
-                  alt="Photo by Fakurian Design"
+                  alt=""
                   className="h-full w-full object-cover object-center"
                 />
               </div>
@@ -139,9 +139,7 @@ export const Content = () => {
             </section>
           </div>
         </div>
-        {/* hero - end */}
-        {/* features - start */}
-        <div className="bg-purple-300 py-6 sm:py-8 lg:py-12">
+       <div className="bg-white-300 py-6 sm:py-8 lg:py-12">
           <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
             {/* text - start */}
             <div className="mb-10 md:mb-16 ">
@@ -357,22 +355,9 @@ export const Content = () => {
             </div>
           </div>
         </div>
-        {/* features - end */}
-        {/* logo cloud - start */}
-        <div className="bg-purple-300 py-6 sm:py-8 lg:py-12">
+        <div className="bg-white-300 py-6 sm:py-8 lg:py-12">
           <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-            {/* text - start */}
-            <div className="mb-10 md:mb-16">
-              <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-                Our Team by the numbers
-              </h2>
-              <p className="mx-auto max-w-screen-md text-center text-black md:text-lg">
-                This is a section of some simple filler text, also known as
-                placeholder text. It shares some characteristics of a real written
-                text but is random or otherwise generated.
-              </p>
-            </div>
-            {/* text - end */}
+           
             <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-0 md:divide-x">
               {/* stat - start */}
               <div className="flex flex-col items-center md:p-4">
@@ -410,9 +395,7 @@ export const Content = () => {
             </div>
           </div>
         </div>
-        {/* stats - end */}
-        {/* team - start */}
-        <div className="bg-purple-300 py-6 sm:py-8 lg:py-12">
+        <div className="bg-white-300 py-6 sm:py-8 lg:py-12">
           <div className="mx-auto max-w-screen-xl px-4 md:px-8">
             <h2 className="mb-8 text-center text-2xl font-bold text-black md:mb-12 lg:text-3xl">
               What others say about us
@@ -423,13 +406,10 @@ export const Content = () => {
             </div>
           </div>
         </div>
-        {/* testemonials - end */}
-        {/* newsletter - start */}
-        <div className="bg-purple-300">
+        <div className="bg-white-300">
           <footer className="mx-auto max-w-screen-2xl px-4 md:px-8">
             <div className="mb-16 grid grid-cols-2 gap-12 pt-10 md:grid-cols-4 lg:grid-cols-6 lg:gap-8 lg:pt-12">
               <div className="col-span-full lg:col-span-2">
-                {/* logo - start */}
                 <div className="mb-4 lg:-mt-2">
                   <a
                     href="/"
@@ -446,7 +426,7 @@ export const Content = () => {
                     >
                       <path d="M96 0V47L48 94H0V47L48 0H96Z" />
                     </svg>
-                    Flowrift
+                    Company Profile
                   </a>
                 </div>
                 {/* logo - end */}
@@ -689,7 +669,7 @@ export const Content = () => {
               {/* nav - end */}
             </div>
             <div className="border-t border-gray-800 py-8 text-center text-sm  text-black">
-              © 2021 - Present Flowrift. All rights reserved.
+              © 2024 - Present. All rights reserved.
             </div>
           </footer>
         </div>
