@@ -25,7 +25,9 @@ const EditPage = () => {
         if (response.status === 200) {
           response.json()
             .then(data => {
+              console.log(data);
               setCurrentUser(data);
+              setCompanyProfile(data.profile);
               sessionStorage.setItem('user', JSON.stringify(data));
             })
         }

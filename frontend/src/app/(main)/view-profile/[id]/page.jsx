@@ -1,4 +1,5 @@
 'use client';
+import { IconBuilding } from '@tabler/icons-react';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
@@ -30,51 +31,70 @@ const Viewpage = () => {
       return <div className="grid lg:grid-cols-2 gap-y-4 bg-white">
         {/* Content */}
         <div className="lg:col-span-0">
-          <div className="py-8 lg:pe-8">
-            <div className="space-y-5 lg:space-y-8">
-              <h2 className="text-3xl font-bold lg:text-5xl text-black">
-                {companyDetails.name}
-              </h2>
-              <div className="flex items-center gap-x-5">
-                <p className="text-xs sm:text-sm text-gray-800 dark:text-neutral-200">
-                  January 18, 2023
-                </p>
+          <div className="flex ">
+            <div className="space-y-5 lg:space-y-4 ">
+              <div>
+                <h2 className="text-3xl font-bold lg:text-5xl text-black">
+                  {companyDetails.name}
+                </h2>
+                <div className="flex items-center gap-x-5">
+                  <p className="text-xs sm:text-sm text-gray-800 dark:text-neutral-200">
+                    January 18, 2023
+                  </p>
+                </div>
               </div>
-              <div className='bg-red-300'>
-              <p className="text-lg text-gray-800 dark:text-neutral-200">
-                {companyDetails.name}
-              </p>
+              <div>
+                <h1 className='text-black'>Name of the company</h1>
+                <div className='bg-red-300 rounded-md p-2 flex gap-3'>
+                  <IconBuilding color='#000' />
+                  <p className="text-lg text-gray-800 dark:text-neutral-200">
+                    {companyDetails.name}
+                  </p>
+                </div>
               </div>
-              <div className='bg-green-200'>
-              <p className="text-lg text-gray-800 dark:text-neutral-200">
-                {companyDetails.contact}
-              </p>
+              <div>
+                <h1 className='text-black'>Phone Number</h1>
+                <div className='bg-green-200 rounded-md p-2'>
+                  <p className="text-lg text-gray-800 dark:text-neutral-200">
+                    {companyDetails.contact}
+                  </p>
+                </div>
               </div>
-              <div className='bg-yellow-200'>
-              <p className="text-lg text-gray-800 dark:text-neutral-200">
-                {companyDetails.address}
-              </p>
+              <div>
+                <h1 className='text-black'>Address</h1>
+                <div className='bg-yellow-200 rounded-md p-2'>
+                  <p className="text-lg text-gray-800 dark:text-neutral-200">
+                    {companyDetails.address}
+                  </p>
+                </div>
               </div>
-              <div className='bg-gray-300'>
-              <p className="text-lg text-gray-800 dark:text-neutral-200">
-                {companyDetails.email}
-              </p>
+              <div>
+                <h1 className='text-black'>Contact email</h1>
+                <div className='bg-gray-300 rounded-md p-2'>
+                  <p className="text-lg text-gray-800 dark:text-neutral-200">
+                    {companyDetails.email}
+                  </p>
+                </div>
               </div>
-              <div className='bg-purple-500'>
-              <p className="text-lg text-gray-800 dark:text-neutral-200">
-                {companyDetails.about}
-              </p>
+              <div>
+                <h1 className='text-black'>Scope of the company</h1>
+                <div className='bg-purple-500 rounded-md p-2'>
+                  <p className="text-lg text-gray-800 dark:text-neutral-200">
+                    {companyDetails.about}
+                  </p>
+                </div>
               </div>
-              <div className='inline-flex text-center'>
-              <img
-                        className="object-cover w-24 h-24 mx-2 rounded-full"
-                        src={'http://localhost:5000/' + companyDetails.logo}
-                        alt="avatar"
-                    />
-                
-              </div>
+
+
             </div>
           </div>
+        </div>
+        <div className='flex justify-center '>
+          <img
+            className="object-cover w-full h-full rounded-bl-full"
+            src={'http://localhost:5000/' + companyDetails.logo}
+            alt="avatar"
+          />
         </div>
       </div>
 
@@ -101,7 +121,8 @@ const Viewpage = () => {
               Find us at these locations.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2">
+          <br />
+          <div className="grid grid-cols-1 gap-12 lg:col-span-2 sm:grid-cols-2 bg-blue-200 rounded-xl p-5">
             <div>
               <h2 className="font-medium text-gray-800 dark:text-white">City</h2>
               <p className="mt-2 text-gray-500 dark:text-gray-400">
@@ -133,6 +154,9 @@ const Viewpage = () => {
                 {companyDetails.industry}
               </p>
             </div>
+          </div>
+          <div className=''>
+            <img src="https://png.pngtree.com/png-vector/20230413/ourmid/pngtree-3d-location-icon-clipart-in-transparent-background-vector-png-image_6704161.png" alt="" />
           </div>
         </div>
       </section>

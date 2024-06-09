@@ -6,7 +6,7 @@ const categry = () => {
     <div>
       <>
         {/* Team */}
-        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-blue-200">
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           {/* Title */}
           <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
             <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-white">
@@ -19,7 +19,7 @@ const categry = () => {
             <Link className="text-center" href={'/browse-profile/hospital'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://www.who.int/images/default-source/wpro/health-topic/hospitals/f8-11102016-my-6042.tmb-1024v.jpg?Culture=en&sfvrsn=57e1f33d_4"
+                src="https://png.pngtree.com/png-vector/20220630/ourmid/pngtree-hospital-logo-icon-abstract-alliance-png-image_5638727.png"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
@@ -32,7 +32,7 @@ const categry = () => {
             <Link className="text-center" href={'/browse-profile/Cafe'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://c.ndtvimg.com/2024-01/nmncfji_indian-cuisine_625x300_26_January_24.jpg?im=FeatureCrop,algorithm=dnn,width=1200,height=738"
+                src="https://t4.ftcdn.net/jpg/05/14/51/79/360_F_514517927_dXLi1DauUmrCaE3AkElsVgJ1jaYZMcSA.jpg"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
@@ -46,7 +46,7 @@ const categry = () => {
             <Link className="text-center"href={'/browse-profile/school&college'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://www.research-in-germany.org/dam/jcr:1e10a168-41cc-4655-8923-86da01270076/school_iStock-1358014313.jpg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwpuF8XWuywZwiL9ZL0m80gplVXgNmCBJKUQ&s"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
@@ -74,12 +74,12 @@ const categry = () => {
             <Link className="text-center"href={'/browse-profile/carservice'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwjfgHnoWxAHcVbR9bEhgX7CHJJkcCacf33Z0y2cARCQ&s"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUsfd-D89CW6jxUITlE2ErVzH1beDhKrnAtA&s"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
                 <h3 className="text-sm font-medium text-gray-800 sm:text-base lg:text-lg dark:text-neutral-200">
-                  CAR service
+                  Repairment
                 </h3>
 
               </div>
@@ -88,7 +88,7 @@ const categry = () => {
             <Link className="text-center"href={'/browse-profile/malls'}>
               <img
                 className="rounded-xl sm:size-48 lg:size-60 mx-auto"
-                src="https://static.vecteezy.com/system/resources/previews/007/526/988/original/building-mall-icon-logo-design-template-flat-style-trendy-free-vector.jpg"
+                src="https://static.vecteezy.com/system/resources/previews/020/662/330/non_2x/store-icon-logo-illustration-vector.jpg"
                 alt="Image Description"
               />
               <div className="mt-2 sm:mt-4">
