@@ -4,6 +4,7 @@ const mySchema = new Schema({
     user: { type: Types.ObjectId, ref: 'user' },
     rating: Number,
     feedback: String,
+    image: String,
     createdAt: { type: Date, default: Date.now }
 });
 

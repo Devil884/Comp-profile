@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { use, useEffect, useState } from "react";
 import StarRatings from "react-star-ratings";
 
 export const Content = () => {
@@ -37,16 +37,20 @@ export const Content = () => {
         </div>
         <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
           <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+            
             <img
-              src=""
+            
+              src={feedback.user.profilePic}
               loading="lazy"
               alt=""
-              className="h-full w-full object-cover object-center"
+              className=" object-cover object-center"
+             
             />
           </div>
           <div>
             <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
               {feedback.user.name}
+              
             </div>
           </div>
         </div>

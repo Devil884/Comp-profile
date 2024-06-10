@@ -1,5 +1,6 @@
 'use client';
 import { IconBuilding } from '@tabler/icons-react';
+import { IconPhone } from '@tabler/icons-react';
 import { useParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react'
 
@@ -54,7 +55,8 @@ const Viewpage = () => {
               </div>
               <div>
                 <h1 className='text-black'>Phone Number</h1>
-                <div className='bg-green-200 rounded-md p-2'>
+                <div className='bg-green-200 rounded-md p-2 flex gap-3'>
+                <IconPhone color='#000' />
                   <p className="text-lg text-gray-800 dark:text-neutral-200">
                     {companyDetails.contact}
                   </p>
