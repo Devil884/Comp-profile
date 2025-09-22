@@ -77,8 +77,8 @@ const BrowseProfile = () => {
   }
 
   return (
-    <div>
-        <div className="relative overflow-hidden bg-gray-100 ">
+    <div style={{ background: "linear-gradient(135deg, #47d1ffff 0%, #dd7777ff 100%)", minHeight: '100vh' }}>
+        <div className="relative overflow-hidden  ">
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-5 sm:py-24">
             <div className="text-center">
               <h1 className="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-neutral-200">

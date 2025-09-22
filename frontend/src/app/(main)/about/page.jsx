@@ -6,7 +6,12 @@ const About = () => {
     <div>
    
 {/* Features */}
-        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"style={{
+                minHeight: "100vh",
+                background: "linear-gradient(135deg, #FFB347 0%, #77DD77 100%)",
+                padding: "40px 0",
+                fontFamily: "Segoe UI, sans-serif",
+            }}>
           <div className="aspect-w-16 aspect-h-7">
 
           </div>

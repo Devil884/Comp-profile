@@ -49,8 +49,9 @@ export const Content = () => {
           </div> */}
           <div>
             <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-              {feedback.user.name}
-              
+              {feedback.user?.name || "Anonymous"}
+
+            
             </div>
           </div>
         </div>
@@ -60,7 +61,12 @@ export const Content = () => {
 
 
   return (
-    <div>
+    <div style={{
+                minHeight: "100vh",
+                background: "linear-gradient(135deg, #fac943ff 0%, #ec4741ff 100%)",
+                padding: "40px 0",
+                fontFamily: "Segoe UI, sans-serif",
+            }}>
       <>
        
         <div className="bg-white-300 pb-6 sm:pb-8 lg:pb-12">
@@ -131,12 +137,12 @@ export const Content = () => {
               </div>
               {/* content - end */}
               {/* image - start */}
-              <div className="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+              <div className="h-48 overflow-hidden rounded-lg lg:h-auto xl:w-6/12">
                 <img
-                  src="https://img.clipart-library.com/24/afed5dbb-bfc0-44ee-ad2f-7ea1ceb40b0b.png"
+                  src="https://images.pexels.com/photos/3671649/pexels-photo-3671649.jpeg"
                   loading="lazy"
                   alt=""
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-center rounded-2xl"
                 />
               </div>
               {/* image - end */}
@@ -404,7 +410,7 @@ export const Content = () => {
             <h2 className="mb-8 text-center text-2xl font-bold text-black md:mb-12 lg:text-3xl">
               What others say about us
             </h2>
-            <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 lg:grid-cols-3 lg:divide-x">
+            <div className="grid gap-y-10 sm:grid-cols-1 sm:gap-y-6 lg:grid-cols-2 lg:divide-x lg:grid-rows-2">
               {/* quote - start */}
               {displayFeedbacks()}
             </div>
