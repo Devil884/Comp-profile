@@ -138,7 +138,7 @@ const Sidebar = () => {
                                     strokeLinejoin="round"
                                 />
                             </svg>
-                            <span className="mx-4 font-medium"> <Link href={'/contact'}>Contact</Link></span>
+                            <span className="mx-4 font-medium"> <Link href={'/form'}>Contact</Link></span>
                         </a>
                     </nav>
                     <div>

@@ -4,12 +4,14 @@ import React from 'react'
 const categry = () => {
   return (
     <div>
+        <div className='bg-blue-100'
+        img style={{backgroundImage: "url('https://img.freepik.com/free-vector/hand-drawn-flat-design-community-background_23-2149437071.jpg?w=2000')", backgroundSize: 'cover', backgroundPosition: 'center', minHeight: '100vh'}}>
       <>
         {/* Team */}
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           {/* Title */}
           <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-white">
+            <h2 className="text-2xl font-bold md:text-4xl md:leading-tight text-black">
               Find your needs here
             </h2>
           </div>
@@ -18,7 +20,7 @@ const categry = () => {
           <div  className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
             <Link className="text-center" href={'/browse-profile/hospital'}>
               <img
-                className="rounded-xl sm:size-48 lg:size-60 mx-auto"
+                className="rounded-xl sm:size-48 lg:size-60 mx-auto bg-white"
                 src="https://png.pngtree.com/png-vector/20220630/ourmid/pngtree-hospital-logo-icon-abstract-alliance-png-image_5638727.png"
                 alt="Image Description"
               />
@@ -31,7 +33,7 @@ const categry = () => {
             {/* End Col */}
             <Link className="text-center" href={'/browse-profile/Cafe'}>
               <img
-                className="rounded-xl sm:size-48 lg:size-60 mx-auto"
+                className="rounded-xl sm:size-48 lg:size-60 mx-auto "
                 src="https://t4.ftcdn.net/jpg/05/14/51/79/360_F_514517927_dXLi1DauUmrCaE3AkElsVgJ1jaYZMcSA.jpg"
                 alt="Image Description"
               />
@@ -147,6 +149,7 @@ const categry = () => {
         {/* End Team */}
       </>
 
+    </div>
     </div>
   )
 }

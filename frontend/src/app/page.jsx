@@ -36,7 +36,7 @@ export const Content = () => {
           {feedback.feedback}
         </div>
         <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-          <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
+          {/* <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
             
             <img
             
@@ -46,7 +46,7 @@ export const Content = () => {
               className=" object-cover object-center"
              
             />
-          </div>
+          </div> */}
           <div>
             <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
               {feedback.user.name}
