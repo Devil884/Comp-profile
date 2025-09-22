@@ -351,7 +351,7 @@ const FundingPage = () => {
                 </div>
             </div>
             <div style={{ textAlign: "center", marginTop: 32, color: "#fff", fontWeight: 600 }}>
-                <span>Powered by ProjectM Funding Platform 🚀</span>
+                <span>Make a good relation with us🚀</span>
             </div>
         </div>
     );
