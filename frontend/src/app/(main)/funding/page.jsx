@@ -9,7 +9,7 @@ const steps = [
         title: "Choose Funding Type",
         description: "Select the type of funding you need.",
         options: ["Crowdfunding", "Angel Investment", "Venture Capital", "Grant"],
-        color: "#FFB347",
+        color: "#fbb046ff",
     },
     {
         title: "Enter Project Details",
